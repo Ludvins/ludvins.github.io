@@ -67,7 +67,7 @@ Representative publications that I am a primary author on are
 <em><a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'>Diversity and Generalization in Neural Network Ensembles</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_pmlr-v151-ortega22a").toggle()'>abs</a>] [<a href='https://github.com/PGM-Lab/2022-AISTATS-diversity' target='_blank'>code</a>] <br>
-Luis&nbsp;A.&nbsp;Ortega, Rafael&nbsp;Caba\~nas, and Andres&nbsp;Masegosa<br>
+Luis&nbsp;A.&nbsp;Ortega, Rafael&nbsp;Cabañas, and Andrés&nbsp;Masegosa<br>
 NeurIPS 2022  <br>
 
 <div id="abs_pmlr-v151-ortega22a" style="text-align: justify; display: none" markdown="1">
@@ -87,7 +87,7 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 <em><a href='https://arxiv.org/abs/2207.10673' target='_blank'>Correcting Model Bias with Sparse Implicit Processes</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_santana2022correcting").toggle()'>abs</a>]<br>
-Sim&oacute;n&nbsp;Rodr&iacute;guez&nbsp;Santana, Luis&nbsp;A.&nbsp;Ortega, Daniel&nbsp;Hern\'andez-Lobato, and Bryan&nbsp;Zald&iacute;var<br>
+Sim&oacute;n&nbsp;Rodr&iacute;guez&nbsp;Santana, Luis&nbsp;A.&nbsp;Ortega, Daniel&nbsp;Hernández-Lobato, and Bryan&nbsp;Zald&iacute;var<br>
 arXiv 2022  <br>
 
 <div id="abs_santana2022correcting" style="text-align: justify; display: none" markdown="1">
