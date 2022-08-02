@@ -75,7 +75,8 @@ they define.
   <td>
   <div style='float: right'>2020</div>
   <div>
-    Research Collaboration Scholarship with the Department of Computer Science
+    Research Collaboration Scholarship
+    <br><p style="color:grey;font-size:1.2rem">Department of Computer Science, Autonomous University of Madrid</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
@@ -85,6 +86,7 @@ they define.
   <div style='float: right'>2021</div>
   <div>
     Granted FPI-UAM Scholarship. Competitive Predoctoral Contract for Training Research Personnel
+    <br><p style="color:grey;font-size:1.2rem">Department of Computer Science, Autonomous University of Madrid</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2021</td> -->
