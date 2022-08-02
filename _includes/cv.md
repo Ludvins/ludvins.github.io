@@ -91,6 +91,16 @@ they define.
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2021</td> -->
 </tr>
+<tr>
+  <td>
+  <div style='float: right'>2020</div>
+  <div>
+    Granted Highest Mark on Bachelor's Thesis, 10/10. Statistical Models with Variational Methods
+    <br><p style="color:grey;font-size:1.2rem">Department of Computer Science and Faculty of Science, Granada</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
+</tr>
 </table>
 
 
@@ -152,12 +162,24 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'>2022</span>
-    <a href="https://github.com/PGM-Lab/2022-AISTATS-diversity">PGM-Lab/2022-AISTATS-diversity</a> |
-    <i class="fa fas fa-star"></i> 2 |
-    <em>Diversity and Generalization on Neural Network Ensembles</em>
+    <span class='cvdate'>2017</span>
+    <a href="https://github.com/libreim/apuntesDGIIM">libreim/apuntesDGIIM</a> |
+    <i class="fa fas fa-star"></i> 77 |
+    <em>Divulgation Group Destinated to the Double Degree in Computer Science and Mathematics, Granada</em>
     <!--  -->
-    <!--     PGM-Lab/2022-AISTATS-diversity  -->
+    <!--     libreim/apuntesDGIIM  -->
+    <!--  -->
+  </td>
+</tr>
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
+  <td>
+    <span class='cvdate'>2020</span>
+    <a href="https://github.com/Ludvins/Statistical-Models-with-Variational-Methods">Ludvins/Statistical-Models-with-Variational-Methods</a> |
+    <i class="fa fas fa-star"></i> 8 |
+    <em>Bachelor's Thesis, Statistical Models with Variational Methods.</em>
+    <!--  -->
+    <!--     Ludvins/Statistical-Models-with-Variational-Methods  -->
     <!--  -->
   </td>
 </tr>
