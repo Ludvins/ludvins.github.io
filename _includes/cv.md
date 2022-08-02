@@ -3,10 +3,21 @@ I am a PhD Student at the
 <b>Autonomous University of Madrid</b>
 and study foundational topics in <b>machine learning</b> and
 <b>function space inference</b>.
-My research focuses on function space inference, more precisely on studying
-implicit processes and methods of approximating the intractable distributions
+My research focuses on studying implicit processes and methods of approximating the intractable distributions
 they define.
 </p><br>
+
+
+## <i class="fa fa-chevron-right"></i> Current Position
+<table class="table table-hover">
+<tr>
+  <td style='padding-right:0;'>
+<span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
+<p markdown="1" style='margin: 0'><strong>Research Personnel, Ph.D. Student granted with FPI-UAM Scholarship</strong>, <em>Autonomous University</em>, Madrid
+</p>
+  </td>
+</tr>
+</table>
 
 
 ## <i class="fa fa-chevron-right"></i> Education
@@ -14,8 +25,19 @@ they define.
 <table class="table table-hover">
   <tr>
     <td>
+      <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
+      <strong>Ph.D. Student</strong>, <em>Autonomous University of Madrid</em>
+      <br>
+        <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
+        <br> Thesis: *New Learning Methods based on Implicit Processes*
+        <br> Advisor: <a href="https://dhnzl.org" target="_blank">Daniel Hernández Lobato</a>
+        </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <span class='cvdate'>2020&nbsp;-&nbsp;2022</span>
-      <strong>MsC in Data Science</strong>, <em>Autonomous University</em>
+      <strong>M.S. in Data Science</strong>, <em>Autonomous University of Madrid</em>
       <br>
     </td>
   </tr>
@@ -47,6 +69,29 @@ they define.
 </table>
 
 
+## <i class="fa fa-chevron-right"></i> Honors & Awards
+<table class="table table-hover">
+<tr>
+  <td>
+  <div style='float: right'>2020</div>
+  <div>
+    Research Collaboration Scholarship with the Department of Computer Science
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
+</tr>
+<tr>
+  <td>
+  <div style='float: right'>2021</div>
+  <div>
+    Granted FPI-UAM Scholarship. Competitive Predoctoral Contract for Training Research Personnel
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2021</td> -->
+</tr>
+</table>
+
+
 ## <i class="fa fa-chevron-right"></i> Publications
 
 <!-- [<a href="https://github.com/bamos/cv/blob/master/publications/all.bib">BibTeX</a>] -->
@@ -67,8 +112,8 @@ Representative publications that I am a primary author on are
 <em><a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'>Diversity and Generalization in Neural Network Ensembles</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_pmlr-v151-ortega22a").toggle()'>abs</a>] [<a href='https://github.com/PGM-Lab/2022-AISTATS-diversity' target='_blank'>code</a>] <br>
-Luis&nbsp;A.&nbsp;Ortega, Rafael&nbsp;Cabañas, and Andrés&nbsp;Masegosa<br>
-NeurIPS 2022  <br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://www.linkedin.com/in/rcabanasdepaz' target='_blank'>Rafael&nbsp;Cabañas</a>, and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
+AISTATS 2022  <br>
 
 <div id="abs_pmlr-v151-ortega22a" style="text-align: justify; display: none" markdown="1">
 Ensembles are widely used in machine learning and, usually, provide state-of-the-art performance in many prediction tasks. From the very beginning, the diversity of an ensemble has been identified as a key factor for the superior performance of these models. But the exact role that diversity plays in ensemble models is poorly understood, specially in the context of neural networks. In this work, we combine and expand previously published results in a theoretically sound framework that describes the relationship between diversity and ensemble performance for a wide range of ensemble methods. More precisely, we provide sound answers to the following questions: how to measure diversity, how diversity relates to the generalization error of an ensemble, and how diversity is promoted by neural network ensemble algorithms. This analysis covers three widely used loss functions, namely, the squared loss, the cross-entropy loss, and the 0-1 loss; and two widely used model combination strategies, namely, model averaging and weighted majority vote. We empirically validate this theoretical analysis with neural network ensembles.
@@ -86,9 +131,9 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 <a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
 <em><a href='https://arxiv.org/abs/2207.10673' target='_blank'>Correcting Model Bias with Sparse Implicit Processes</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_santana2022correcting").toggle()'>abs</a>]<br>
-Sim&oacute;n&nbsp;Rodr&iacute;guez&nbsp;Santana, Luis&nbsp;A.&nbsp;Ortega, Daniel&nbsp;Hernández-Lobato, and Bryan&nbsp;Zald&iacute;var<br>
-arXiv 2022  <br>
+    onclick='$("#abs_santana2022correcting").toggle()'>abs</a>] [<a href='https://github.com/simonrsantana/sparse-implicit-processes' target='_blank'>code</a>] <br>
+Sim&oacute;n&nbsp;Rodr&iacute;guez&nbsp;Santana, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a>, and Bryan&nbsp;Zald&iacute;var<br>
+Beyond Bayes Workshop, ICML 2022  <br>
 
 <div id="abs_santana2022correcting" style="text-align: justify; display: none" markdown="1">
 Model selection in machine learning (ML) is a crucial part of the Bayesian learning procedure. Model choice may impose strong biases on the resulting predictions, which can hinder the performance of methods such as Bayesian neural networks and neural samplers. On the other hand, newly proposed approaches for Bayesian ML exploit features of approximate inference in function space with implicit stochastic processes (a generalization of Gaussian processes). The approach of Sparse Implicit Processes (SIP) is particularly successful in this regard, since it is fully trainable and achieves flexible predictions. Here, we expand on the original experiments to show that SIP is capable of correcting model bias when the data generating mechanism differs strongly from the one implied by the model. We use synthetic datasets to show that SIP is capable of providing predictive distributions that reflect the data better than the exact predictions of the initial, but wrongly assumed model.
