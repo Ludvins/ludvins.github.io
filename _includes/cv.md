@@ -107,15 +107,15 @@ they define.
 ## <i class="fa fa-chevron-right"></i> Publications
 
 <!-- [<a href="https://github.com/bamos/cv/blob/master/publications/all.bib">BibTeX</a>] -->
-Representative publications that I am a primary author on are
-<span style='background-color: #ffffd0'>highlighted.</span>
+<!-- Representative publications that I am a primary author on are -->
+<!-- <span style='background-color: #ffffd0'>highlighted.</span> -->
 <br>
-[<a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>; 2+ citations, h-index: 1+]
+<!-- [<a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>; 2+ citations, h-index: 1+] -->
 
 <h2>2022</h2>
 <table class="table table-hover">
 
-<tr id="tr-pmlr-v151-ortega22a" style="background-color: #ffffd0">
+<tr id="tr-pmlr-v151-ortega22a" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 1.
 </td>
@@ -155,7 +155,7 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
 </tr>
 
 
-<tr id="tr-ortega2022deep" style="background-color: #ffffd0">
+<tr id="tr-ortega2022deep" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 3.
 </td>
