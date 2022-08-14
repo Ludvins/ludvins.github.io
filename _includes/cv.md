@@ -154,6 +154,26 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
 </td>
 </tr>
 
+
+<tr id="tr-ortega2022deep" style="background-color: #ffffd0">
+<td align='right' style='padding-left:0;padding-right:0;'>
+3.
+</td>
+<td>
+<a href='https://arxiv.org/abs/2206.06720' target='_blank'><img src="images/publications/ortega2022deep.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://arxiv.org/abs/2206.06720' target='_blank'>Deep Variational Implicit Processes</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_ortega2022deep").toggle()'>abs</a>]<br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Sim&oacute;n&nbsp;Rodr&iacute;guez&nbsp;Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
+Under Review 2022  <br>
+
+<div id="abs_ortega2022deep" style="text-align: justify; display: none" markdown="1">
+mplicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance.
+</div>
+
+</td>
+</tr>
+
 </table>
 
 
