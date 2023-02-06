@@ -63,7 +63,9 @@ they define.
 <tr>
   <td style='padding-right:0;'>
 <span class='cvdate'>2021&nbsp;-&nbsp;2021</span>
-<p markdown="1" style='margin: 0'><strong>Research Assistant</strong>, <em>University of Almería</em></p>
+<p markdown="1" style='margin: 0'><strong>Research Assistant</strong>, <em>University of Almería</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
+(with <a href="https://andresmasegosa.github.io/" target="_blank">Andrés R. Masegosa</a> studing the effect of diversity on Deep Neural Network ensembles.)
+</span></p>
   </td>
 </tr>
 </table>
@@ -112,12 +114,36 @@ they define.
 <br>
 <!-- [<a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>; 2+ citations, h-index: 1+] -->
 
+<h2>2023</h2>
+<table class="table table-hover">
+
+<tr id="tr-ortega2023deep" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+1.
+</td>
+<td>
+<a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'>Deep Variational Implicit Processes</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_ortega2023deep").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/DeepVariationalImplicitProcesses' target='_blank'>code</a>] <br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
+ICLR 2023  <br>
+
+<div id="abs_ortega2023deep" style="text-align: justify; display: none" markdown="1">
+Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance. 
+selected  = false
+</div>
+
+</td>
+</tr>
+
+</table>
 <h2>2022</h2>
 <table class="table table-hover">
 
 <tr id="tr-pmlr-v151-ortega22a" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-1.
+2.
 </td>
 <td>
 <a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'><img src="images/publications/pmlr-v151-ortega22a.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -137,38 +163,18 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 
 <tr id="tr-santana2022correcting" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+3.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
 <em><a href='https://arxiv.org/abs/2207.10673' target='_blank'>Correcting Model Bias with Sparse Implicit Processes</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_santana2022correcting").toggle()'>abs</a>] [<a href='https://github.com/simonrsantana/sparse-implicit-processes' target='_blank'>code</a>] <br>
-Sim&oacute;n&nbsp;Rodr&iacute;guez&nbsp;Santana, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a>, and Bryan&nbsp;Zald&iacute;var<br>
+Simón&nbsp;Rodríguez-Santana, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a>, and <a href='https://www.linkedin.com/in/bryan-zaldivar/' target='_blank'>Bryan&nbsp;Zaldívar</a><br>
 Beyond Bayes Workshop, ICML 2022  <br>
 
 <div id="abs_santana2022correcting" style="text-align: justify; display: none" markdown="1">
 Model selection in machine learning (ML) is a crucial part of the Bayesian learning procedure. Model choice may impose strong biases on the resulting predictions, which can hinder the performance of methods such as Bayesian neural networks and neural samplers. On the other hand, newly proposed approaches for Bayesian ML exploit features of approximate inference in function space with implicit stochastic processes (a generalization of Gaussian processes). The approach of Sparse Implicit Processes (SIP) is particularly successful in this regard, since it is fully trainable and achieves flexible predictions. Here, we expand on the original experiments to show that SIP is capable of correcting model bias when the data generating mechanism differs strongly from the one implied by the model. We use synthetic datasets to show that SIP is capable of providing predictive distributions that reflect the data better than the exact predictions of the initial, but wrongly assumed model.
-</div>
-
-</td>
-</tr>
-
-
-<tr id="tr-ortega2022deep" >
-<td align='right' style='padding-left:0;padding-right:0;'>
-3.
-</td>
-<td>
-<a href='https://arxiv.org/abs/2206.06720' target='_blank'><img src="images/publications/ortega2022deep.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
-<em><a href='https://arxiv.org/abs/2206.06720' target='_blank'>Deep Variational Implicit Processes</a> </em> 
-[<a href='javascript:;'
-    onclick='$("#abs_ortega2022deep").toggle()'>abs</a>]<br>
-<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Sim&oacute;n&nbsp;Rodr&iacute;guez&nbsp;Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
-Under Review 2022  <br>
-
-<div id="abs_ortega2022deep" style="text-align: justify; display: none" markdown="1">
-Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance.
 </div>
 
 </td>
