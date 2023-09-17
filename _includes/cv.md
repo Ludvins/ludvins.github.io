@@ -15,10 +15,7 @@ they define.
     <td style='padding-right:0;'>
       <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
       <p markdown="1" style='margin: 0'><strong>Research Personnel, Ph.D. Student granted with FPI-UAM Scholarship</strong>, <em>Autonomous University</em>          , Madrid
-<br>
-          <br> Thesis: *New Learning Methods based on Implicit Processes*
-          <br> Advisor: <a href="https://dhnzl.org" target="_blank">Daniel Hernández Lobato</a>
-      </p>
+</p>
     </td>
   </tr>
 </table>
