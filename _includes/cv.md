@@ -9,14 +9,20 @@ they define.
 
 
 ## <i class="fa fa-chevron-right"></i> Current Position
+
 <table class="table table-hover">
-<tr>
-  <td style='padding-right:0;'>
-<span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
-<p markdown="1" style='margin: 0'><strong>Research Personnel, Ph.D. Student granted with FPI-UAM Scholarship</strong>, <em>Autonomous University</em>, Madrid
-</p>
-  </td>
-</tr>
+  <tr>
+    <td style='padding-right:0;'>
+      <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
+      <p markdown="1" style='margin: 0'><strong>Research Personnel, Ph.D. Student granted with FPI-UAM Scholarship</strong>, <em>Autonomous University</em>          , Madrid
+<br>
+          <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
+          <br> Thesis: *New Learning Methods based on Implicit Processes*
+          <br> Advisor: <a href="https://dhnzl.org" target="_blank">Daniel Hernández Lobato</a>
+          </p>
+      </p>
+    </td>
+  </tr>
 </table>
 
 
@@ -112,7 +118,7 @@ they define.
 <!-- Representative publications that I am a primary author on are -->
 <!-- <span style='background-color: #ffffd0'>highlighted.</span> -->
 <br>
-<!-- [<a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>; 2+ citations, h-index: 1+] -->
+<!-- [<a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>; 14+ citations, h-index: 1+] -->
 
 <h2>2023</h2>
 <table class="table table-hover">
@@ -127,7 +133,7 @@ they define.
 [<a href='javascript:;'
     onclick='$("#abs_ortega2023deep").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/DeepVariationalImplicitProcesses' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
-ICLR 2023  <br>
+International Conference on Learning Representations, 2023 2023  <br>
 
 <div id="abs_ortega2023deep" style="text-align: justify; display: none" markdown="1">
 Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance. 
@@ -202,7 +208,7 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
     <span class='cvdate'>2017</span>
     <a href="https://github.com/libreim/apuntesDGIIM">libreim/apuntesDGIIM</a> |
-    <i class="fa fas fa-star"></i> 77 |
+    <i class="fa fas fa-star"></i> 79 |
     <em>Divulgation Group Destinated to the Double Degree in Computer Science and Mathematics, Granada</em>
     <!--  -->
     <!--     libreim/apuntesDGIIM  -->
