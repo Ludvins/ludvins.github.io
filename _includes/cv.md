@@ -1,10 +1,9 @@
 <p align='justify'>
 I am a PhD Student at the
 <b>Autonomous University of Madrid</b>
-and study foundational topics in <b>machine learning</b> and
-<b>function space inference</b>.
-My research focuses on studying implicit processes and methods of approximating the intractable distributions
-they define.
+and study foundational topics in <b>probabilistic machine learning</b> and
+<b>variational inference</b>.
+My research focuses on studying the application of variational inference to modern Bayesian deep learning.
 </p><br>
 
 
@@ -26,12 +25,11 @@ they define.
 <table class="table table-hover">
   <tr>
     <td>
-      <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
+      <span class='cvdate'>11/2021&nbsp;-&nbsp;11/2025</span>
       <strong>Ph.D. Student</strong>, <em>Autonomous University of Madrid</em>
       <br>
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
         <br> Thesis: *New Learning Methods based on Implicit Processes*
-        <br> Advisor: <a href="https://dhnzl.org" target="_blank">Daniel Hernández Lobato</a>
         </p>
     </td>
   </tr>
@@ -76,10 +74,20 @@ they define.
 <table class="table table-hover">
 <tr>
   <td>
+  <div style='float: right'>09/2023 - 12/2023</div>
+  <div>
+    Granted Santander-UAM Scholarship. Uncertainty estimation in LLM at Cambridge University.
+    <br><p style="color:grey;font-size:1.4rem">Computational and Biological Learning Lab, University of Cambridge</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>09/2023 - 12/2023</td> -->
+</tr>
+<tr>
+  <td>
   <div style='float: right'>2021</div>
   <div>
     Granted FPI-UAM Scholarship. Competitive Predoctoral Contract for Training Research Personnel
-    <br><p style="color:grey;font-size:1.2rem">Department of Computer Science, Autonomous University of Madrid</p>
+    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science, Autonomous University of Madrid</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2021</td> -->
@@ -89,7 +97,7 @@ they define.
   <div style='float: right'>2020</div>
   <div>
     Research Collaboration Scholarship
-    <br><p style="color:grey;font-size:1.2rem">Department of Computer Science, Autonomous University of Madrid</p>
+    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science, Autonomous University of Madrid</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
@@ -99,7 +107,7 @@ they define.
   <div style='float: right'>2020</div>
   <div>
     Granted Highest Mark on Bachelor's Thesis, 10/10. Statistical Models with Variational Methods
-    <br><p style="color:grey;font-size:1.2rem">Department of Computer Science and Faculty of Science, Granada</p>
+    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science and Faculty of Science, Granada</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
@@ -123,7 +131,7 @@ they define.
 1.
 </td>
 <td>
-<a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg" width="300"/></a> 
 <em><a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'>Deep Variational Implicit Processes</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_ortega2023deep").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/DeepVariationalImplicitProcesses' target='_blank'>code</a>] <br>
@@ -147,7 +155,7 @@ selected  = false
 2.
 </td>
 <td>
-<a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'><img src="images/publications/pmlr-v151-ortega22a.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'><img src="images/publications/pmlr-v151-ortega22a.png" onerror="this.style.display='none'" class="publicationImg" width="300"/></a> 
 <em><a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'>Diversity and Generalization in Neural Network Ensembles</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_pmlr-v151-ortega22a").toggle()'>abs</a>] [<a href='https://github.com/PGM-Lab/2022-AISTATS-diversity' target='_blank'>code</a>] <br>
@@ -167,7 +175,7 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 3.
 </td>
 <td>
-<a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg" width="300"/></a> 
 <em><a href='https://arxiv.org/abs/2207.10673' target='_blank'>Correcting Model Bias with Sparse Implicit Processes</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_santana2022correcting").toggle()'>abs</a>] [<a href='https://github.com/simonrsantana/sparse-implicit-processes' target='_blank'>code</a>] <br>
@@ -184,30 +192,50 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Open Source Repositories
+## <i class="fa fa-chevron-right"></i> Ongoing Research
 <table class="table table-hover">
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'>2020</span>
-    <a href="https://github.com/Ludvins/Statistical-Models-with-Variational-Methods">Ludvins/Statistical-Models-with-Variational-Methods</a> |
-    <i class="fa fas fa-star"></i> 8 |
-    <em>Bachelor's Thesis, Statistical Models with Variational Methods.</em>
-    <!--  -->
-    <!--     Ludvins/Statistical-Models-with-Variational-Methods  -->
-    <!--  -->
+  <!-- <div style='float: right'></div> -->
+  <div>
+    Variational Linearized Laplace Approximation for Bayesian Deep Learning
+        [<a href="https://arxiv.org/abs/2302.12565">pre-print</a>]
+    <br><p style="color:grey;font-size:1.4rem">Uncertainty estimation on pre-trained Deep Learning models using Variational Inference and LLA.</p>
+  </div>
   </td>
+  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'>2017</span>
-    <a href="https://github.com/libreim/apuntesDGIIM">libreim/apuntesDGIIM</a> |
-    <i class="fa fas fa-star"></i> 79 |
-    <em>Divulgation Group Destinated to the Double Degree in Computer Science and Mathematics, Granada</em>
-    <!--  -->
-    <!--     libreim/apuntesDGIIM  -->
-    <!--  -->
+  <!-- <div style='float: right'></div> -->
+  <div>
+    Understanding Generalization in the Interpolation Regime using the Rate Function
+        [<a href="https://arxiv.org/abs/2306.10947">pre-print</a>]
+    <br><p style="color:grey;font-size:1.4rem">Explaining deep learning techniques (weight-decay, SGD, overparameterization, data-augmentation) using Large Deviation Theory</p>
+  </div>
   </td>
+  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
+</tr>
+<tr>
+  <td>
+  <!-- <div style='float: right'></div> -->
+  <div>
+    If there is no underfitting, there is no Cold Posterior Effect
+        [<a href="https://arxiv.org/abs/2310.01189">pre-print</a>]
+    <br><p style="color:grey;font-size:1.4rem">Misspecification leads to Cold Posterior Effect (CPE) only when the resulting Bayesian posterior underfits.</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
+</tr>
+<tr>
+  <td>
+  <!-- <div style='float: right'></div> -->
+  <div>
+    PAC-Bayes-Chernoff bounds for unbounded losses
+        [<a href="https://arxiv.org/abs/2401.01148">pre-print</a>]
+    <br><p style="color:grey;font-size:1.4rem">PAC-Bayes version of the Chernoff bound which solves the open problem of optimizing the free parameter on many PAC-Bayes bounds.</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
 </tr>
 </table>
