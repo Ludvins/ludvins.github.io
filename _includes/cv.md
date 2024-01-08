@@ -134,7 +134,7 @@ My research focuses on studying the application of variational inference to mode
 <a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg" width="300"/></a> 
 <em><a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'>Deep Variational Implicit Processes</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ortega2023deep").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/DeepVariationalImplicitProcesses' target='_blank'>code</a>] <br>
+    onclick='$("#abs_ortega2023deep").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/2023-ICLR-DVIP' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
 International Conference on Learning Representations (ICLR) 2023  <br>
 
