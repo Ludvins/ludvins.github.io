@@ -74,13 +74,13 @@ My research focuses on studying the application of variational inference to mode
 <table class="table table-hover">
 <tr>
   <td>
-  <div style='float: right'>09/2023 - 12/2023</div>
+  <div style='float: right'>2023</div>
   <div>
-    Granted Santander-UAM Scholarship. Uncertainty estimation in LLM at Cambridge University.
+    Granted Santander-UAM Scholarship. Uncertainty Estimation in LLM at Cambridge University.
     <br><p style="color:grey;font-size:1.4rem">Computational and Biological Learning Lab, University of Cambridge</p>
   </div>
   </td>
-  <!-- <td class='col-md-2' style='text-align:right;'>09/2023 - 12/2023</td> -->
+  <!-- <td class='col-md-2' style='text-align:right;'>2023</td> -->
 </tr>
 <tr>
   <td>
@@ -140,7 +140,8 @@ International Conference on Learning Representations (ICLR) 2023  <br>
 
 <div id="abs_ortega2023deep" style="text-align: justify; display: none" markdown="1">
 <br> 
-Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance.
+Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance. 
+selected  = false
 </div>
 
 </td>
@@ -200,7 +201,7 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    Variational Linearized Laplace Approximation for Bayesian Deep Learning
+    Variational Linearized Laplace Approximation for Bayesian Deep Learning (Under Review)
         [<a href="https://arxiv.org/abs/2302.12565">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">Uncertainty estimation on pre-trained Deep Learning models using Variational Inference and LLA.</p>
   </div>
@@ -211,9 +212,9 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    Understanding Generalization in the Interpolation Regime using the Rate Function
+    PAC-Chernoff Bounds: Understanding Generalization in the Interpolation Regime
         [<a href="https://arxiv.org/abs/2306.10947">pre-print</a>]
-    <br><p style="color:grey;font-size:1.4rem">Explaining deep learning techniques (weight-decay, SGD, overparameterization, data-augmentation) using Large Deviation Theory</p>
+    <br><p style="color:grey;font-size:1.4rem">Explaining deep learning techniques (weight-decay, overparameterization, data-augmentation) using Large Deviation Theory</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'></td> -->
@@ -233,7 +234,7 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    PAC-Bayes-Chernoff bounds for unbounded losses
+    PAC-Bayes-Chernoff Bounds for Unbounded Losses
         [<a href="https://arxiv.org/abs/2401.01148">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">PAC-Bayes version of the Chernoff bound which solves the open problem of optimizing the free parameter on many PAC-Bayes bounds.</p>
   </div>
