@@ -107,7 +107,7 @@ My research focuses on studying the application of variational inference to mode
   <div style='float: right'>2020</div>
   <div>
     Granted Highest Mark on Bachelor's Thesis, 10/10. Statistical Models with Variational Methods
-    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science and Faculty of Science, Granada</p>
+    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science and Faculty of Science, University of Granada</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
