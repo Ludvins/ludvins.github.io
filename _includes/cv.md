@@ -29,7 +29,7 @@ My research focuses on studying the application of variational inference to mode
       <strong>Ph.D. Student</strong>, <em>Autonomous University of Madrid</em>
       <br>
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> Thesis: *New Learning Methods based on Implicit Processes*
+        <br> Thesis: *Variational Inference for Bayesian Deep Learning*
         </p>
     </td>
   </tr>
@@ -61,9 +61,17 @@ My research focuses on studying the application of variational inference to mode
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
+<span class='cvdate'>09/2023&nbsp;-&nbsp;12/2023</span>
+<p markdown="1" style='margin: 0'><strong>Visitor Researcher</strong>, <em>University of Cambridge</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
+(Research on Uncertainty Estimation on Large Language Models with <a href="https://jmhl.org/" target="_blank">José Miguel Hernández Lobato</a>.)
+</span></p>
+  </td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
 <span class='cvdate'>2021&nbsp;-&nbsp;2021</span>
 <p markdown="1" style='margin: 0'><strong>Research Assistant</strong>, <em>University of Almería</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
-(with <a href="https://andresmasegosa.github.io/" target="_blank">Andrés R. Masegosa</a> studing the effect of diversity on Deep Neural Network ensembles.)
+(Research on the effect of diversity on Deep Neural Network ensembles with <a href="https://andresmasegosa.github.io/" target="_blank">Andrés R. Masegosa</a>.)
 </span></p>
   </td>
 </tr>
@@ -123,12 +131,36 @@ My research focuses on studying the application of variational inference to mode
 <br>
 <!-- [<a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>; 14+ citations, h-index: 1+] -->
 
+<h2>2024</h2>
+<table class="table table-hover">
+
+<tr id="tr-ortega2023variational" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+1.
+</td>
+<td>
+<a href='https://openreview.net/forum?id=1n3aC5rvdE' target='_blank'><img src="images/publications/ortega2023variational.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='https://openreview.net/forum?id=1n3aC5rvdE' target='_blank'>Variational Linearized Laplace Approximation for Bayesian Deep Learning</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_ortega2023variational").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/Variational-LLA' target='_blank'>code</a>] <br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
+International Conference on Machine Learning (ICML) 2024  <br>
+
+<div id="abs_ortega2023variational" style="text-align: justify; display: none" markdown="1">
+<br> 
+The Linearized Laplace Approximation (LLA) has been recently used to perform uncertainty estimation on the predictions of pre-trained deep neural networks (DNNs). However, its widespread application is hindered by significant computational costs, particularly in scenarios with a large number of training points or DNN parameters. Consequently, additional approximations of LLA, such as Kronecker-factored or diagonal approximate GGN matrices, are utilized, potentially compromising the model's performance. To address these challenges, we propose a new method for approximating LLA using a variational sparse Gaussian Process (GP). Our method is based on the dual RKHS formulation of GPs and retains, as the predictive mean, the output of the original DNN. Furthermore, it allows for efficient stochastic optimization, which results in sub-linear training time in the size of the training dataset. Specifically, its training cost is independent of the number of training points. We compare our proposed method against accelerated LLA (ELLA), which relies on the Nyström approximation, as well as other LLA variants employing the sample-then-optimize principle. Experimental results, both on regression and classification datasets, show that our method outperforms these already existing efficient variants of LLA, both in terms of the quality of the predictive distribution and in terms of total computational time.
+</div>
+
+</td>
+</tr>
+
+</table>
 <h2>2023</h2>
 <table class="table table-hover">
 
 <tr id="tr-ortega2023deep" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-1.
+2.
 </td>
 <td>
 <a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -153,7 +185,7 @@ selected  = false
 
 <tr id="tr-pmlr-v151-ortega22a" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+3.
 </td>
 <td>
 <a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'><img src="images/publications/pmlr-v151-ortega22a.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -171,27 +203,6 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 </td>
 </tr>
 
-
-<tr id="tr-santana2022correcting" >
-<td align='right' style='padding-left:0;padding-right:0;'>
-3.
-</td>
-<td>
-<a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
-<em><a href='https://arxiv.org/abs/2207.10673' target='_blank'>Correcting Model Bias with Sparse Implicit Processes</a> </em> 
-[<a href='javascript:;'
-    onclick='$("#abs_santana2022correcting").toggle()'>abs</a>] [<a href='https://github.com/simonrsantana/sparse-implicit-processes' target='_blank'>code</a>] <br>
-Simón&nbsp;Rodríguez-Santana, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a>, and <a href='https://www.linkedin.com/in/bryan-zaldivar/' target='_blank'>Bryan&nbsp;Zaldívar</a><br>
-ICML Workshop "Beyond Bayes: Paths Towards Universal Reasoning Systems" 2022  <br>
-
-<div id="abs_santana2022correcting" style="text-align: justify; display: none" markdown="1">
-<br> 
-Model selection in machine learning (ML) is a crucial part of the Bayesian learning procedure. Model choice may impose strong biases on the resulting predictions, which can hinder the performance of methods such as Bayesian neural networks and neural samplers. On the other hand, newly proposed approaches for Bayesian ML exploit features of approximate inference in function space with implicit stochastic processes (a generalization of Gaussian processes). The approach of Sparse Implicit Processes (SIP) is particularly successful in this regard, since it is fully trainable and achieves flexible predictions. Here, we expand on the original experiments to show that SIP is capable of correcting model bias when the data generating mechanism differs strongly from the one implied by the model. We use synthetic datasets to show that SIP is capable of providing predictive distributions that reflect the data better than the exact predictions of the initial, but wrongly assumed model.
-</div>
-
-</td>
-</tr>
-
 </table>
 
 
@@ -201,18 +212,7 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    Variational Linearized Laplace Approximation for Bayesian Deep Learning (Under Review)
-        [<a href="https://arxiv.org/abs/2302.12565">pre-print</a>]
-    <br><p style="color:grey;font-size:1.4rem">Uncertainty estimation on pre-trained Deep Learning models using Variational Inference and LLA.</p>
-  </div>
-  </td>
-  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
-</tr>
-<tr>
-  <td>
-  <!-- <div style='float: right'></div> -->
-  <div>
-    PAC-Chernoff Bounds: Understanding Generalization in the Interpolation Regime
+    PAC-Chernoff Bounds: Understanding Generalization in the Interpolation Regime (under review)
         [<a href="https://arxiv.org/abs/2306.10947">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">Explaining deep learning techniques (weight-decay, overparameterization, data-augmentation) using Large Deviation Theory</p>
   </div>
@@ -223,7 +223,7 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    If there is no underfitting, there is no Cold Posterior Effect
+    If there is no underfitting, there is no Cold Posterior Effect (under review)
         [<a href="https://arxiv.org/abs/2310.01189">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">Misspecification leads to Cold Posterior Effect (CPE) only when the resulting Bayesian posterior underfits.</p>
   </div>
@@ -234,7 +234,7 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    PAC-Bayes-Chernoff Bounds for Unbounded Losses
+    PAC-Bayes-Chernoff Bounds for Unbounded Losses (under review)"
         [<a href="https://arxiv.org/abs/2401.01148">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">PAC-Bayes version of the Chernoff bound which solves the open problem of optimizing the free parameter on many PAC-Bayes bounds.</p>
   </div>
