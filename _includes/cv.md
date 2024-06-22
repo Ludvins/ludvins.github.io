@@ -38,6 +38,9 @@ My research focuses on studying the application of variational inference to mode
       <span class='cvdate'>2020&nbsp;-&nbsp;2022</span>
       <strong>M.S. in Data Science</strong>, <em>Autonomous University of Madrid</em>
       <br>
+        <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
+        <br> Master Thesis: *Deep Variational Implicit Processes*
+        </p>
     </td>
   </tr>
   <tr>
@@ -52,6 +55,9 @@ My research focuses on studying the application of variational inference to mode
       <span class='cvdate'>2015&nbsp;-&nbsp;2020</span>
       <strong>B.S. in Mathematics</strong>, <em>University of Granada</em>
       <br>
+        <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
+        <br> Bachelor Thesis: *Statistical Models with Variational Methods*
+        </p>
     </td>
   </tr>
 </table>
@@ -214,7 +220,7 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
   <div>
     PAC-Chernoff Bounds: Understanding Generalization in the Interpolation Regime (under review)
         [<a href="https://arxiv.org/abs/2306.10947">pre-print</a>]
-    <br><p style="color:grey;font-size:1.4rem">Explaining deep learning techniques (weight-decay, overparameterization, data-augmentation) using Large Deviation Theory</p>
+    <br><p style="color:grey;font-size:1.4rem">Explaining deep learning techniques (weight-decay, overparameterization, data-augmentation) using Large Deviation Theory.</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'></td> -->
@@ -234,7 +240,7 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    PAC-Bayes-Chernoff Bounds for Unbounded Losses (under review)"
+    PAC-Bayes-Chernoff Bounds for Unbounded Losses (under review)
         [<a href="https://arxiv.org/abs/2401.01148">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">PAC-Bayes version of the Chernoff bound which solves the open problem of optimizing the free parameter on many PAC-Bayes bounds.</p>
   </div>
