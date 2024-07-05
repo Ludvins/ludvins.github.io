@@ -140,21 +140,42 @@ My research focuses on studying the application of variational inference to mode
 <h2>2024</h2>
 <table class="table table-hover">
 
-<tr id="tr-ortega2023variational" >
+<tr id="tr-ortega2024variational" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 1.
 </td>
 <td>
-<a href='https://openreview.net/forum?id=1n3aC5rvdE' target='_blank'><img src="images/publications/ortega2023variational.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<a href='https://openreview.net/forum?id=1n3aC5rvdE' target='_blank'><img src="images/publications/ortega2024variational.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
 <em><a href='https://openreview.net/forum?id=1n3aC5rvdE' target='_blank'>Variational Linearized Laplace Approximation for Bayesian Deep Learning</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ortega2023variational").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/Variational-LLA' target='_blank'>code</a>] <br>
+    onclick='$("#abs_ortega2024variational").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/Variational-LLA' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
 International Conference on Machine Learning (ICML) 2024  <br>
 
-<div id="abs_ortega2023variational" style="text-align: justify; display: none" markdown="1">
+<div id="abs_ortega2024variational" style="text-align: justify; display: none" markdown="1">
 <br> 
 The Linearized Laplace Approximation (LLA) has been recently used to perform uncertainty estimation on the predictions of pre-trained deep neural networks (DNNs). However, its widespread application is hindered by significant computational costs, particularly in scenarios with a large number of training points or DNN parameters. Consequently, additional approximations of LLA, such as Kronecker-factored or diagonal approximate GGN matrices, are utilized, potentially compromising the model's performance. To address these challenges, we propose a new method for approximating LLA using a variational sparse Gaussian Process (GP). Our method is based on the dual RKHS formulation of GPs and retains, as the predictive mean, the output of the original DNN. Furthermore, it allows for efficient stochastic optimization, which results in sub-linear training time in the size of the training dataset. Specifically, its training cost is independent of the number of training points. We compare our proposed method against accelerated LLA (ELLA), which relies on the Nyström approximation, as well as other LLA variants employing the sample-then-optimize principle. Experimental results, both on regression and classification datasets, show that our method outperforms these already existing efficient variants of LLA, both in terms of the quality of the predictive distribution and in terms of total computational time.
+</div>
+
+</td>
+</tr>
+
+
+<tr id="tr-zhang2024cold" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+2.
+</td>
+<td>
+<a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'><img src="images/publications/zhang2024cold.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'>The Cold Posterior Effect Indicates Underfitting, and Cold Posteriors Represent a Fully Bayesian Method to Mitigate It</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_zhang2024cold").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+Yijie&nbsp;Zhang, Yi-Shan&nbsp;Wu, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
+Transactions for Machine Learning Research (TMLR) 2024  <br>
+
+<div id="abs_zhang2024cold" style="text-align: justify; display: none" markdown="1">
+<br> 
+The cold posterior effect (CPE) (Wenzel et al., 2020) in Bayesian deep learning shows that, for posteriors with a temperature T<1, the resulting posterior predictive could have better performance than the Bayesian posterior (T=1). As the Bayesian posterior is known to be optimal under perfect model specification, many recent works have studied the presence of CPE as a model misspecification problem, arising from the prior and/or from the likelihood. In this work, we provide a more nuanced understanding of the CPE as we show that misspecification leads to CPE only when the resulting Bayesian posterior underfits. In fact, we theoretically show that if there is no underfitting, there is no CPE. Furthermore, we show that these tempered posteriors with (T<1) are indeed proper Bayesian posteriors with a different combination of likelihood and prior parameterized by $T$. This observation validates the adjustment of the temperature hyperparameter T as a straightforward approach to mitigate underfitting in the Bayesian posterior. In essence, we show that by fine-tuning the temperature T we implicitly utilize alternative Bayesian posteriors, albeit with less misspecified likelihood and prior distributions.
 </div>
 
 </td>
@@ -166,7 +187,7 @@ The Linearized Laplace Approximation (LLA) has been recently used to perform unc
 
 <tr id="tr-ortega2023deep" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+3.
 </td>
 <td>
 <a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -191,7 +212,7 @@ selected  = false
 
 <tr id="tr-pmlr-v151-ortega22a" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-3.
+4.
 </td>
 <td>
 <a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'><img src="images/publications/pmlr-v151-ortega22a.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -221,17 +242,6 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
     PAC-Chernoff Bounds: Understanding Generalization in the Interpolation Regime (under review)
         [<a href="https://arxiv.org/abs/2306.10947">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">Explaining deep learning techniques (weight-decay, overparameterization, data-augmentation) using Large Deviation Theory.</p>
-  </div>
-  </td>
-  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
-</tr>
-<tr>
-  <td>
-  <!-- <div style='float: right'></div> -->
-  <div>
-    If there is no underfitting, there is no Cold Posterior Effect (under review)
-        [<a href="https://arxiv.org/abs/2310.01189">pre-print</a>]
-    <br><p style="color:grey;font-size:1.4rem">Misspecification leads to Cold Posterior Effect (CPE) only when the resulting Bayesian posterior underfits.</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'></td> -->
