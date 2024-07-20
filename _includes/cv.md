@@ -145,8 +145,8 @@ My research focuses on studying the application of variational inference to mode
 1.
 </td>
 <td>
-<a href='https://openreview.net/forum?id=1n3aC5rvdE' target='_blank'><img src="images/publications/ortega2024variational.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
-<em><a href='https://openreview.net/forum?id=1n3aC5rvdE' target='_blank'>Variational Linearized Laplace Approximation for Bayesian Deep Learning</a> </em> 
+<a href='https://proceedings.mlr.press/v235/ortega24a.html' target='_blank'><img src="images/publications/ortega2024variational.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='https://proceedings.mlr.press/v235/ortega24a.html' target='_blank'>Variational Linearized Laplace Approximation for Bayesian Deep Learning</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_ortega2024variational").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/Variational-LLA' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
@@ -169,7 +169,7 @@ The Linearized Laplace Approximation (LLA) has been recently used to perform unc
 <a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'><img src="images/publications/zhang2024cold.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
 <em><a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'>The Cold Posterior Effect Indicates Underfitting, and Cold Posteriors Represent a Fully Bayesian Method to Mitigate It</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_zhang2024cold").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+    onclick='$("#abs_zhang2024cold").toggle()'>abs</a>] [<a href='https://github.com/pyijiezhang/cpe-underfit' target='_blank'>code</a>] <br>
 Yijie&nbsp;Zhang, Yi-Shan&nbsp;Wu, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
 Transactions for Machine Learning Research (TMLR) 2024  <br>
 
