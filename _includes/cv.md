@@ -20,6 +20,27 @@ My research focuses on studying the application of variational inference to mode
 </table>
 
 
+## <i class="fa fa-chevron-right"></i> Previous Positions
+<table class="table table-hover">
+<tr>
+  <td style='padding-right:0;'>
+<span class='cvdate'>09/2023&nbsp;-&nbsp;12/2023</span>
+<p markdown="1" style='margin: 0'><strong>Visitor Researcher</strong>, <em>University of Cambridge</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
+(Research on Uncertainty Estimation on Large Language Models with <a href="https://jmhl.org/" target="_blank">José Miguel Hernández Lobato</a>.)
+</span></p>
+  </td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+<span class='cvdate'>2021&nbsp;-&nbsp;2021</span>
+<p markdown="1" style='margin: 0'><strong>Research Assistant</strong>, <em>University of Almería</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
+(Research on the effect of diversity on Deep Neural Network ensembles with <a href="https://andresmasegosa.github.io/" target="_blank">Andrés R. Masegosa</a>.)
+</span></p>
+  </td>
+</tr>
+</table>
+
+
 ## <i class="fa fa-chevron-right"></i> Education
 
 <table class="table table-hover">
@@ -60,72 +81,6 @@ My research focuses on studying the application of variational inference to mode
         </p>
     </td>
   </tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Previous Positions
-<table class="table table-hover">
-<tr>
-  <td style='padding-right:0;'>
-<span class='cvdate'>09/2023&nbsp;-&nbsp;12/2023</span>
-<p markdown="1" style='margin: 0'><strong>Visitor Researcher</strong>, <em>University of Cambridge</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
-(Research on Uncertainty Estimation on Large Language Models with <a href="https://jmhl.org/" target="_blank">José Miguel Hernández Lobato</a>.)
-</span></p>
-  </td>
-</tr>
-<tr>
-  <td style='padding-right:0;'>
-<span class='cvdate'>2021&nbsp;-&nbsp;2021</span>
-<p markdown="1" style='margin: 0'><strong>Research Assistant</strong>, <em>University of Almería</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
-(Research on the effect of diversity on Deep Neural Network ensembles with <a href="https://andresmasegosa.github.io/" target="_blank">Andrés R. Masegosa</a>.)
-</span></p>
-  </td>
-</tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Honors & Awards
-<table class="table table-hover">
-<tr>
-  <td>
-  <div style='float: right'>2023</div>
-  <div>
-    Granted Santander-UAM Scholarship. Uncertainty Estimation in LLM at Cambridge University.
-    <br><p style="color:grey;font-size:1.4rem">Computational and Biological Learning Lab, University of Cambridge</p>
-  </div>
-  </td>
-  <!-- <td class='col-md-2' style='text-align:right;'>2023</td> -->
-</tr>
-<tr>
-  <td>
-  <div style='float: right'>2021</div>
-  <div>
-    Granted FPI-UAM Scholarship. Competitive Predoctoral Contract for Training Research Personnel
-    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science, Autonomous University of Madrid</p>
-  </div>
-  </td>
-  <!-- <td class='col-md-2' style='text-align:right;'>2021</td> -->
-</tr>
-<tr>
-  <td>
-  <div style='float: right'>2020</div>
-  <div>
-    Research Collaboration Scholarship
-    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science, Autonomous University of Madrid</p>
-  </div>
-  </td>
-  <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
-</tr>
-<tr>
-  <td>
-  <div style='float: right'>2020</div>
-  <div>
-    Granted Highest Mark on Bachelor's Thesis, 10/10. Statistical Models with Variational Methods
-    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science and Faculty of Science, University of Granada</p>
-  </div>
-  </td>
-  <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
-</tr>
 </table>
 
 
@@ -256,5 +211,50 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'></td> -->
+</tr>
+</table>
+
+
+## <i class="fa fa-chevron-right"></i> Honors & Awards
+<table class="table table-hover">
+<tr>
+  <td>
+  <div style='float: right'>2023</div>
+  <div>
+    Granted Santander-UAM Scholarship. Uncertainty Estimation in LLM at Cambridge University.
+    <br><p style="color:grey;font-size:1.4rem">Computational and Biological Learning Lab, University of Cambridge</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2023</td> -->
+</tr>
+<tr>
+  <td>
+  <div style='float: right'>2021</div>
+  <div>
+    Granted FPI-UAM Scholarship. Competitive Predoctoral Contract for Training Research Personnel
+    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science, Autonomous University of Madrid</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2021</td> -->
+</tr>
+<tr>
+  <td>
+  <div style='float: right'>2020</div>
+  <div>
+    Research Collaboration Scholarship
+    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science, Autonomous University of Madrid</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
+</tr>
+<tr>
+  <td>
+  <div style='float: right'>2020</div>
+  <div>
+    Granted Highest Mark on Bachelor's Thesis, 10/10. Statistical Models with Variational Methods
+    <br><p style="color:grey;font-size:1.4rem">Department of Computer Science and Faculty of Science, University of Granada</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
 </tr>
 </table>
