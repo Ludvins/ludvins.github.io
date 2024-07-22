@@ -185,6 +185,27 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 </td>
 </tr>
 
+
+<tr id="tr-santana2022correcting" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+5.
+</td>
+<td>
+<a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='https://arxiv.org/abs/2207.10673' target='_blank'>Correcting Model Bias with Sparse Implicit Processes</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_santana2022correcting").toggle()'>abs</a>] [<a href='https://github.com/simonrsantana/sparse-implicit-processes' target='_blank'>code</a>] <br>
+Simón&nbsp;Rodríguez-Santana, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a>, and <a href='https://www.linkedin.com/in/bryan-zaldivar/' target='_blank'>Bryan&nbsp;Zaldívar</a><br>
+ICML Workshop "Beyond Bayes: Paths Towards Universal Reasoning Systems" 2022  <br>
+
+<div id="abs_santana2022correcting" style="text-align: justify; display: none" markdown="1">
+<br> 
+Model selection in machine learning (ML) is a crucial part of the Bayesian learning procedure. Model choice may impose strong biases on the resulting predictions, which can hinder the performance of methods such as Bayesian neural networks and neural samplers. On the other hand, newly proposed approaches for Bayesian ML exploit features of approximate inference in function space with implicit stochastic processes (a generalization of Gaussian processes). The approach of Sparse Implicit Processes (SIP) is particularly successful in this regard, since it is fully trainable and achieves flexible predictions. Here, we expand on the original experiments to show that SIP is capable of correcting model bias when the data generating mechanism differs strongly from the one implied by the model. We use synthetic datasets to show that SIP is capable of providing predictive distributions that reflect the data better than the exact predictions of the initial, but wrongly assumed model.
+</div>
+
+</td>
+</tr>
+
 </table>
 
 
