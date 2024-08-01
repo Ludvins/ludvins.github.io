@@ -13,7 +13,7 @@ My research focuses on studying the application of variational inference to mode
   <tr>
     <td style='padding-right:0;'>
       <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
-      <p markdown="1" style='margin: 0'><strong>Research Personnel, Ph.D. Student granted with FPI-UAM Scholarship</strong>, <em>Autonomous University</em>          , Madrid
+      <p markdown="1" style='margin: 0'><strong>Research Personnel, Ph.D. student granted with FPI-UAM scholarship</strong>, <em>Autonomous University</em>          , Madrid
 </p>
     </td>
   </tr>
@@ -76,9 +76,6 @@ My research focuses on studying the application of variational inference to mode
       <span class='cvdate'>2015&nbsp;-&nbsp;2020</span>
       <strong>B.S. in Mathematics</strong>, <em>University of Granada</em>
       <br>
-        <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> Bachelor Thesis: *Statistical Models with Variational Methods*
-        </p>
     </td>
   </tr>
 </table>
@@ -104,7 +101,7 @@ My research focuses on studying the application of variational inference to mode
 <em><a href='https://proceedings.mlr.press/v235/ortega24a.html' target='_blank'>Variational Linearized Laplace Approximation for Bayesian Deep Learning</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_ortega2024variational").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/Variational-LLA' target='_blank'>code</a>] <br>
-<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://www.iit.comillas.edu/personas/srsantana' target='_blank'>Simón&nbsp;Rodríguez-Santana</a>, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
 International Conference on Machine Learning (ICML) 2024  <br>
 
 <div id="abs_ortega2024variational" style="text-align: justify; display: none" markdown="1">
@@ -122,10 +119,10 @@ The Linearized Laplace Approximation (LLA) has been recently used to perform unc
 </td>
 <td>
 <a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'><img src="images/publications/zhang2024cold.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
-<em><a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'>The Cold Posterior Effect Indicates Underfitting, and Cold Posteriors Represent a Fully Bayesian Method to Mitigate It</a> </em> 
+<em><a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'>The Cold Posterior Effect Indicates Underfitting</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_zhang2024cold").toggle()'>abs</a>] [<a href='https://github.com/pyijiezhang/cpe-underfit' target='_blank'>code</a>] <br>
-Yijie&nbsp;Zhang, Yi-Shan&nbsp;Wu, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
+<a href='https://sites.google.com/view/yijiezhang/home' target='_blank'>Yijie&nbsp;Zhang</a>, <a href='https://sites.google.com/view/yishanwu/home' target='_blank'>Yi-Shan&nbsp;Wu</a>, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
 Transactions for Machine Learning Research (TMLR) 2024  <br>
 
 <div id="abs_zhang2024cold" style="text-align: justify; display: none" markdown="1">
@@ -149,13 +146,12 @@ The cold posterior effect (CPE) (Wenzel et al., 2020) in Bayesian deep learning 
 <em><a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'>Deep Variational Implicit Processes</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_ortega2023deep").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/2023-ICLR-DVIP' target='_blank'>code</a>] <br>
-<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, Simón&nbsp;Rodríguez-Santana, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://www.iit.comillas.edu/personas/srsantana' target='_blank'>Simón&nbsp;Rodríguez-Santana</a>, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
 International Conference on Learning Representations (ICLR) 2023  <br>
 
 <div id="abs_ortega2023deep" style="text-align: justify; display: none" markdown="1">
 <br> 
-Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance. 
-selected  = false
+Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs may lack a closed-form expression but are easy to sample from. Examples include, among others, Bayesian neural networks or neural samplers. IPs can be used as priors over functions, resulting in flexible models with well-calibrated prediction uncertainty estimates. Methods based on IPs usually carry out function-space approximate inference, which overcomes some of the difficulties of parameter-space approximate inference. Nevertheless, the approximations employed often limit the expressiveness of the final model, resulting, e.g., in a Gaussian predictive distribution, which can be restrictive. We propose here a multi-layer generalization of IPs called the Deep Variational Implicit process (DVIP). This generalization is similar to that of deep GPs over GPs, but it is more flexible due to the use of IPs as the prior distribution over the latent functions. We describe a scalable variational inference algorithm for training DVIP and show that it outperforms previous IP-based methods and also deep GPs. We support these claims via extensive regression and classification experiments. We also evaluate DVIP on large datasets with up to several million data instances to illustrate its good scalability and performance.
 </div>
 
 </td>
@@ -195,7 +191,7 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 <em><a href='https://arxiv.org/abs/2207.10673' target='_blank'>Correcting Model Bias with Sparse Implicit Processes</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_santana2022correcting").toggle()'>abs</a>] [<a href='https://github.com/simonrsantana/sparse-implicit-processes' target='_blank'>code</a>] <br>
-Simón&nbsp;Rodríguez-Santana, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a>, and <a href='https://www.linkedin.com/in/bryan-zaldivar/' target='_blank'>Bryan&nbsp;Zaldívar</a><br>
+<a href='https://www.iit.comillas.edu/personas/srsantana' target='_blank'>Simón&nbsp;Rodríguez-Santana</a>, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a>, and <a href='https://www.linkedin.com/in/bryan-zaldivar/' target='_blank'>Bryan&nbsp;Zaldívar</a><br>
 ICML Workshop "Beyond Bayes: Paths Towards Universal Reasoning Systems" 2022  <br>
 
 <div id="abs_santana2022correcting" style="text-align: justify; display: none" markdown="1">
@@ -229,6 +225,16 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
     PAC-Bayes-Chernoff Bounds for Unbounded Losses (under review)
         [<a href="https://arxiv.org/abs/2401.01148">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">PAC-Bayes version of the Chernoff bound which solves the open problem of optimizing the free parameter on many PAC-Bayes bounds.</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
+</tr>
+<tr>
+  <td>
+  <!-- <div style='float: right'></div> -->
+  <div>
+    Fixed-Mean Gaussian Processes for ad-hoc Bayesian Deep Learning
+    <br><p style="color:grey;font-size:1.4rem">Converting models to Bayesian by creating a Gaussian Process with fixed predictive mean to that model.</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'></td> -->
@@ -277,5 +283,34 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2020</td> -->
+</tr>
+</table>
+
+
+## <i class="fa fa-chevron-right"></i> Open Source Contributions
+<table class="table table-hover">
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
+  <td>
+    <span class='cvdate'>2024</span>
+    <a href="https://github.com/AlexImmer/Laplace">AlexImmer/Laplace</a> |
+    <i class="fa fas fa-star"></i> 441 |
+    <em>Implemented Functional (GP) Laplace, working on implementing Variational (VaLLA) and Nyström (ELLA) variants.</em>
+    <!--  -->
+    <!--     AlexImmer/Laplace  -->
+    <!--  -->
+  </td>
+</tr>
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
+  <td>
+    <span class='cvdate'>2017</span>
+    <a href="https://github.com/libreim/apuntesDGIIM">libreim/apuntesDGIIM</a> |
+    <i class="fa fas fa-star"></i> 79 |
+    <em>Divulgation group destinated to the double degree in computer science and mathematics, Granada.</em>
+    <!--  -->
+    <!--     libreim/apuntesDGIIM  -->
+    <!--  -->
+  </td>
 </tr>
 </table>
