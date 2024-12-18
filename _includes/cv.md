@@ -92,9 +92,30 @@ My research focuses on studying the application of variational inference to mode
 <h2>2024</h2>
 <table class="table table-hover">
 
-<tr id="tr-ortega2024variational" >
+<tr id="tr-casado2024pacbayeschernoff" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 1.
+</td>
+<td>
+<a href='https://openreview.net/forum?id=CyzZeND3LB' target='_blank'><img src="images/publications/casado2024pacbayeschernoff.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='https://openreview.net/forum?id=CyzZeND3LB' target='_blank'>PAC-Bayes-Chernoff Bounds for Unbounded Losses</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_casado2024pacbayeschernoff").toggle()'>abs</a>]<br>
+<a href='https://www.bcamath.org/es/node/11954' target='_blank'>Ioar&nbsp;Casado</a>, <strong>Luis&nbsp;A.&nbsp;Ortega</strong>, <a href='https://www.bcamath.org/es/node/10660' target='_blank'>Aritz&nbsp;Pérez</a>, and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
+Neural Information Processing Systems (NeurIPS) 2024  <br>
+
+<div id="abs_casado2024pacbayeschernoff" style="text-align: justify; display: none" markdown="1">
+<br> 
+We introduce a new PAC-Bayes oracle bound for unbounded losses that extends Cramér-Chernoff bounds to the PAC-Bayesian setting. The proof technique relies on controlling the tails of certain random variables involving the Cramér transform of the loss. Our approach naturally leverages properties of Cramér-Chernoff bounds, such as exact optimization of the free parameter in many PAC-Bayes bounds. We highlight several applications of the main theorem. Firstly, we show that our bound recovers and generalizes previous results. Additionally, our approach allows working with richer assumptions that result in more informative and potentially tighter bounds. In this direction, we provide a general bound under a new model-dependent assumption from which we obtain bounds based on parameter norms and log-Sobolev inequalities. Notably, many of these bounds can be minimized to obtain distributions beyond the Gibbs posterior and provide novel theoretical coverage to existing regularization techniques.
+</div>
+
+</td>
+</tr>
+
+
+<tr id="tr-ortega2024variational" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+2.
 </td>
 <td>
 <a href='https://proceedings.mlr.press/v235/ortega24a.html' target='_blank'><img src="images/publications/ortega2024variational.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -115,7 +136,7 @@ The Linearized Laplace Approximation (LLA) has been recently used to perform unc
 
 <tr id="tr-zhang2024cold" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+3.
 </td>
 <td>
 <a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'><img src="images/publications/zhang2024cold.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -127,7 +148,7 @@ Transactions for Machine Learning Research (TMLR) 2024  <br>
 
 <div id="abs_zhang2024cold" style="text-align: justify; display: none" markdown="1">
 <br> 
-The cold posterior effect (CPE) (Wenzel et al., 2020) in Bayesian deep learning shows that, for posteriors with a temperature T<1, the resulting posterior predictive could have better performance than the Bayesian posterior (T=1). As the Bayesian posterior is known to be optimal under perfect model specification, many recent works have studied the presence of CPE as a model misspecification problem, arising from the prior and/or from the likelihood. In this work, we provide a more nuanced understanding of the CPE as we show that misspecification leads to CPE only when the resulting Bayesian posterior underfits. In fact, we theoretically show that if there is no underfitting, there is no CPE. Furthermore, we show that these tempered posteriors with (T<1) are indeed proper Bayesian posteriors with a different combination of likelihood and prior parameterized by $T$. This observation validates the adjustment of the temperature hyperparameter T as a straightforward approach to mitigate underfitting in the Bayesian posterior. In essence, we show that by fine-tuning the temperature T we implicitly utilize alternative Bayesian posteriors, albeit with less misspecified likelihood and prior distributions.
+The cold posterior effect (CPE) (Wenzel et al., 2020) in Bayesian deep learning shows that, for posteriors with a temperature T<1, the resulting posterior predictive could have better performance than the Bayesian posterior (T=1). As the Bayesian posterior is known to be optimal under perfect model specification, many recent works have studied the presence of CPE as a model misspecification problem, arising from the prior and/or from the likelihood. In this work, we provide a more nuanced understanding of the CPE as we show that misspecification leads to CPE only when the resulting Bayesian posterior underfits. In fact, we theoretically show that if there is no underfitting, there is no CPE. Furthermore, we show that these tempered posteriors with (T<1) are indeed proper Bayesian posteriors with a different combination of likelihood and prior parameterized by T. This observation validates the adjustment of the temperature hyperparameter T as a straightforward approach to mitigate underfitting in the Bayesian posterior. In essence, we show that by fine-tuning the temperature T we implicitly utilize alternative Bayesian posteriors, albeit with less misspecified likelihood and prior distributions.
 </div>
 
 </td>
@@ -139,7 +160,7 @@ The cold posterior effect (CPE) (Wenzel et al., 2020) in Bayesian deep learning 
 
 <tr id="tr-ortega2023deep" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-3.
+4.
 </td>
 <td>
 <a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -163,7 +184,7 @@ Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs m
 
 <tr id="tr-pmlr-v151-ortega22a" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-4.
+5.
 </td>
 <td>
 <a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'><img src="images/publications/pmlr-v151-ortega22a.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -184,7 +205,7 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 
 <tr id="tr-santana2022correcting" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-5.
+6.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -222,18 +243,8 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
   <td>
   <!-- <div style='float: right'></div> -->
   <div>
-    PAC-Bayes-Chernoff Bounds for Unbounded Losses (under review)
-        [<a href="https://arxiv.org/abs/2401.01148">pre-print</a>]
-    <br><p style="color:grey;font-size:1.4rem">PAC-Bayes version of the Chernoff bound which solves the open problem of optimizing the free parameter on many PAC-Bayes bounds.</p>
-  </div>
-  </td>
-  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
-</tr>
-<tr>
-  <td>
-  <!-- <div style='float: right'></div> -->
-  <div>
-    Fixed-Mean Gaussian Processes for ad-hoc Bayesian Deep Learning
+    Fixed-Mean Gaussian Processes for ad-hoc Bayesian Deep Learning (under review)
+        [<a href="https://arxiv.org/abs/2412.04177">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">Converting models to Bayesian by creating a Gaussian Process with fixed predictive mean to that model.</p>
   </div>
   </td>
