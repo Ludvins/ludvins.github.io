@@ -1,8 +1,8 @@
 <p align='justify'>
 I am a PhD Student at the
 <b>Autonomous University of Madrid</b>
-and study foundational topics in <b>probabilistic machine learning</b> and
-<b>variational inference</b>.
+and study foundational topics in <b>Probabilistic Machine Learning</b> and
+<b>Variational Inference</b>.
 My research focuses on Function-Space Variational Inference, Linearized Laplace Approximation, Deep Ensembles, and Chernoff-Based Generalization Bounds.
 </p><br>
 
@@ -50,7 +50,7 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
       <strong>Ph.D. Student</strong>, <em>Autonomous University of Madrid</em>
       <br>
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> Thesis: *Uncertainty Estimation and GeneralizationBounds for Modern Deep Learning*
+        <br> Thesis: *Uncertainty Estimation and Generalization Bounds for Modern Deep Learning*
         </p>
     </td>
   </tr>
