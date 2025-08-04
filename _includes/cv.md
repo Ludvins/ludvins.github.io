@@ -3,7 +3,7 @@ I am a PhD Student at the
 <b>Autonomous University of Madrid</b>
 and study foundational topics in <b>probabilistic machine learning</b> and
 <b>variational inference</b>.
-My research focuses on studying the application of variational inference to modern Bayesian deep learning.
+My research focuses on Function-Space Variational Inference, Linearized Laplace Approximation, Deep Ensembles, and Chernoff-Based Generalization Bounds.
 </p><br>
 
 
@@ -50,8 +50,15 @@ My research focuses on studying the application of variational inference to mode
       <strong>Ph.D. Student</strong>, <em>Autonomous University of Madrid</em>
       <br>
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> Thesis: *Variational Inference for Bayesian Deep Learning*
+        <br> Thesis: *Uncertainty Estimation and GeneralizationBounds for Modern Deep Learning*
         </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span class='cvdate'>2024&nbsp;-&nbsp;202X</span>
+      <strong>B.S. in Physics</strong>, <em>National Distance Education University</em>
+      <br>
     </td>
   </tr>
   <tr>
