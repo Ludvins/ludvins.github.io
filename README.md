@@ -2,7 +2,7 @@
 This is the source code for my personal website.
 Unless stated otherwise, all content is MIT-licensed,
 and some of the CV portions are created with the code
-in the [bamos/cv](https://github.com/bamos/cv) repo.
+in the [ludvins/cv](https://github.com/ludvins/cv) repo.
 
 # w3c compliance continuous integration
 Travis CI builds the static website with Jekyll and uses
