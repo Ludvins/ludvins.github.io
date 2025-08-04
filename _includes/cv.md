@@ -109,7 +109,7 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
 [<a href='javascript:;'
     onclick='$("#abs_masegosa2024pacchernoff").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/2024_PAC-Chernoff-Bound' target='_blank'>code</a>] <br>
 <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a> and <strong>Luis&nbsp;A.&nbsp;Ortega</strong><br>
-Journal of Artificial Intelligence Research (JAIR) 2025  <br>
+Journal of Artificial Intelligence Research (JAIR). Spotlight talk at European Conference on Artificial Intelligence (ECAI) 2025  <br>
 
 <div id="abs_masegosa2024pacchernoff" style="text-align: justify; display: none" markdown="1">
 <br> 
