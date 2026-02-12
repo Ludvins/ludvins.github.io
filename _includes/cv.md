@@ -13,7 +13,7 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
   <tr>
     <td style='padding-right:0;'>
       <span class='cvdate'>2026&nbsp;-&nbsp;Present</span>
-      <p markdown="1" style='margin: 0'><strong>Postdoctoral Researcher</strong>, <em>University of Aalborg</em>          , Copenhaguen
+      <p markdown="1" style='margin: 0'><strong>Postdoctoral Researcher</strong>, <em>University of Aalborg</em>          , Denmark
 </p>
     </td>
   </tr>
