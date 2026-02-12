@@ -115,7 +115,7 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
 <a href='' target='_blank'><img src="images/publications/ortega2026scalable.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
 <em><a href='' target='_blank'>Scalable Linearized Laplace Approximation via Surrogate Neural Kernel</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ortega2026scalable").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+    onclick='$("#abs_ortega2026scalable").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/BayesiPy' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A&nbsp;Ortega</strong>, <a href='https://www.iit.comillas.edu/personas/srsantana' target='_blank'>Simón&nbsp;Rodríguez-Santana</a>, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
 European Symposium on Artificial Neural Networks (ESANN) 2026  <br>
 
@@ -157,7 +157,7 @@ Deep neural networks (DNNs) often produce overconfident out-of-distribution pred
 <a href='' target='_blank'><img src="images/publications/ortega2026slarge.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
 <em><a href='' target='_blank'>A Large Deviation Theory Analysis on the Implicit Bias of SGD</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ortega2026slarge").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+    onclick='$("#abs_ortega2026slarge").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/sgd-implicit-bias-ldt' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A.&nbsp;Ortega</strong> and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
 Neurocomputing 2026  <br>
 
