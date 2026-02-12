@@ -107,19 +107,19 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
 <h2>2026</h2>
 <table class="table table-hover">
 
-<tr id="tr-ortega2026scallable" >
+<tr id="tr-ortega2026scalable" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 1.
 </td>
 <td>
-<a href='' target='_blank'><img src="images/publications/ortega2026scallable.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<a href='' target='_blank'><img src="images/publications/ortega2026scalable.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
 <em><a href='' target='_blank'>Scalable Linearized Laplace Approximation via Surrogate Neural Kernel</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ortega2026scallable").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
-<strong>Luis&nbsp;A&nbsp;Ortega</strong>, Sim&oacute;n&nbsp;Rodr&iacute;guez-Santana, and Daniel&nbsp;Hern\'andez-Lobato<br>
+    onclick='$("#abs_ortega2026scalable").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+<strong>Luis&nbsp;A&nbsp;Ortega</strong>, <a href='https://www.iit.comillas.edu/personas/srsantana' target='_blank'>Simón&nbsp;Rodríguez-Santana</a>, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
 European Symposium on Artificial Neural Networks (ESANN) 2026  <br>
 
-<div id="abs_ortega2026scallable" style="text-align: justify; display: none" markdown="1">
+<div id="abs_ortega2026scalable" style="text-align: justify; display: none" markdown="1">
 <br> 
 We introduce a scalable method to approximate the kernel of the Linearized Laplace Approximation (LLA). For this, we use a surrogate deep neural network (DNN) that learns a compact feature representation whose inner product replicates the Neural Tangent Kernel (NTK). This avoids the need to compute large Jacobians. Training relies solely on efficient Jacobian-vector products, allowing to compute predictive uncertainty on large-scale pre-trained DNNs. Experimental results show similar or improved uncertainty estimation and calibration compared to existing LLA approximations. Notwithstanding, biasing the learned kernel significantly enhances out-of-distribution detection. This remarks the benefits of the proposed method for finding better kernels than the NTK in the context of LLA to compute prediction uncertainty given a pre-trained DNN.
 </div>
@@ -137,7 +137,7 @@ We introduce a scalable method to approximate the kernel of the Linearized Lapla
 <em><a href='' target='_blank'>Improving the Linearized Laplace Approximation via Quadratic Approximations</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_jimenez2026improving").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
-Pedro&nbsp;Jim\'enez, <strong>Luis&nbsp;A&nbsp;Ortega</strong>, Pablo&nbsp;Morales-\'Alvarez, and Daniel&nbsp;Hern\'andez-Lobato<br>
+Pedro&nbsp;Jiménez, <strong>Luis&nbsp;A&nbsp;Ortega</strong>, Pablo&nbsp;Morales-Álvarez, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
 European Symposium on Artificial Neural Networks (ESANN) 2026  <br>
 
 <div id="abs_jimenez2026improving" style="text-align: justify; display: none" markdown="1">
@@ -158,7 +158,7 @@ Deep neural networks (DNNs) often produce overconfident out-of-distribution pred
 <em><a href='' target='_blank'>A Large Deviation Theory Analysis on the Implicit Bias of SGD</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_ortega2026large").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
-<strong>Luis&nbsp;A.&nbsp;Ortega</strong> and Andr\'es&nbsp;R&nbsp;Masegosa<br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong> and Andrés&nbsp;R&nbsp;Masegosa<br>
 Neurocomputing 2026  <br>
 
 <div id="abs_ortega2026large" style="text-align: justify; display: none" markdown="1">
