@@ -1,6 +1,6 @@
 <p align='justify'>
-I am a PhD Student at the
-<b>Autonomous University of Madrid</b>
+I am a Postdoctoral Researcher
+<b>University of Aalborg</b>
 and study foundational topics in <b>Probabilistic Machine Learning</b> and
 <b>Variational Inference</b>.
 My research focuses on Function-Space Variational Inference, Linearized Laplace Approximation, Deep Ensembles, and Chernoff-Based Generalization Bounds.
@@ -12,8 +12,8 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
 <table class="table table-hover">
   <tr>
     <td style='padding-right:0;'>
-      <span class='cvdate'>2021&nbsp;-&nbsp;Present</span>
-      <p markdown="1" style='margin: 0'><strong>Research Personnel, Ph.D. student granted with FPI-UAM scholarship</strong>, <em>Autonomous University</em>          , Madrid
+      <span class='cvdate'>2026&nbsp;-&nbsp;Present</span>
+      <p markdown="1" style='margin: 0'><strong>Postdoctoral Researcher</strong>, <em>University of Aalborg</em>          , Copenhaguen
 </p>
     </td>
   </tr>
@@ -22,6 +22,14 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
 
 ## <i class="fa fa-chevron-right"></i> Previous Positions
 <table class="table table-hover">
+<tr>
+  <td style='padding-right:0;'>
+<span class='cvdate'>11/2021&nbsp;-&nbsp;11/2025</span>
+<p markdown="1" style='margin: 0'><strong>Research Personnel</strong>, <em>Autonomous University of Madrid</em><span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
+(Research on Variational Function-space methods for Bayesian Deep Learning, and Generalization bounds for Machine Learning.)
+</span></p>
+  </td>
+</tr>
 <tr>
   <td style='padding-right:0;'>
 <span class='cvdate'>09/2023&nbsp;-&nbsp;12/2023</span>
@@ -96,12 +104,78 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
 <br>
 <!-- [<a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>; 14+ citations, h-index: 1+] -->
 
+<h2>2026</h2>
+<table class="table table-hover">
+
+<tr id="tr-ortega2026scallable" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+1.
+</td>
+<td>
+<a href='' target='_blank'><img src="images/publications/ortega2026scallable.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='' target='_blank'>Scalable Linearized Laplace Approximation via Surrogate Neural Kernel</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_ortega2026scallable").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+<strong>Luis&nbsp;A&nbsp;Ortega</strong>, Sim&oacute;n&nbsp;Rodr&iacute;guez-Santana, and Daniel&nbsp;Hern\'andez-Lobato<br>
+European Symposium on Artificial Neural Networks (ESANN) 2026  <br>
+
+<div id="abs_ortega2026scallable" style="text-align: justify; display: none" markdown="1">
+<br> 
+We introduce a scalable method to approximate the kernel of the Linearized Laplace Approximation (LLA). For this, we use a surrogate deep neural network (DNN) that learns a compact feature representation whose inner product replicates the Neural Tangent Kernel (NTK). This avoids the need to compute large Jacobians. Training relies solely on efficient Jacobian-vector products, allowing to compute predictive uncertainty on large-scale pre-trained DNNs. Experimental results show similar or improved uncertainty estimation and calibration compared to existing LLA approximations. Notwithstanding, biasing the learned kernel significantly enhances out-of-distribution detection. This remarks the benefits of the proposed method for finding better kernels than the NTK in the context of LLA to compute prediction uncertainty given a pre-trained DNN.
+</div>
+
+</td>
+</tr>
+
+
+<tr id="tr-jimenez2026improving" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+2.
+</td>
+<td>
+<a href='' target='_blank'><img src="images/publications/jimenez2026improving.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='' target='_blank'>Improving the Linearized Laplace Approximation via Quadratic Approximations</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_jimenez2026improving").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+Pedro&nbsp;Jim\'enez, <strong>Luis&nbsp;A&nbsp;Ortega</strong>, Pablo&nbsp;Morales-\'Alvarez, and Daniel&nbsp;Hern\'andez-Lobato<br>
+European Symposium on Artificial Neural Networks (ESANN) 2026  <br>
+
+<div id="abs_jimenez2026improving" style="text-align: justify; display: none" markdown="1">
+<br> 
+Deep neural networks (DNNs) often produce overconfident out-of-distribution predictions, motivating Bayesian uncertainty quantification. The Linearized Laplace Approximation (LLA) achieves this by linearizing the DNN and applying Laplace inference to the resulting model. Importantly, the linear model is also used for prediction. We argue this linearization in the posterior may degrade fidelity to the true Laplace approximation. To alleviate this problem, without increasing significantly the computational cost, we propose the Quadratic Laplace Approximation (QLA). QLA approximates each second order factor in the approximate Laplace log-posterior using a rank-one factor obtained via efficient power iterations. QLA is expected to yield a posterior precision closer to that of the full Laplace without forming the full Hessian, which is typically intractable. For prediction, QLA also uses the linearized model. Empirically, QLA yields modest yet consistent uncertainty estimation improvements over LLA on five regression datasets.
+</div>
+
+</td>
+</tr>
+
+
+<tr id="tr-ortega2026large" >
+<td align='right' style='padding-left:0;padding-right:0;'>
+3.
+</td>
+<td>
+<a href='' target='_blank'><img src="images/publications/ortega2026large.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<em><a href='' target='_blank'>A Large Deviation Theory Analysis on the Implicit Bias of SGD</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_ortega2026large").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong> and Andr\'es&nbsp;R&nbsp;Masegosa<br>
+Neurocomputing 2026  <br>
+
+<div id="abs_ortega2026large" style="text-align: justify; display: none" markdown="1">
+<br> 
+Stochastic Gradient Descent (SGD) is the primary optimization method used in deep learning, yet the reasons behind its ability to select models that generalize effectively remain unclear. This paper develops a new perspective based on Large Deviation Theory (LDT). We show that the generalization error can be decomposed into three terms: the expected loss, a component that reflects the concentration of the empirical loss around its mean, and a component that captures the abnormality of deviations arising from stochastic sampling. This decomposition highlights a key difference between optimization methods: while full-batch Gradient Descent tends to exploit poorly concentrated and abnormal fluctuations—often leading to overfitting—mini-batch SGD naturally biases the search towards models with tighter concentration and fewer abnormal deviations. The analysis relies on standard assumptions such as i.i.d data and smooth loss functions. Experiments with deep convolutional networks support the theoretical findings, showing that smaller batch sizes and $\ell_2$ regularization reinforce the preference for models with smaller generalization error. These results position LDT as a useful tool for understanding implicit regularization in SGD and suggest directions for extending this perspective to broader machine learning settings.
+</div>
+
+</td>
+</tr>
+
+</table>
 <h2>2025</h2>
 <table class="table table-hover">
 
 <tr id="tr-masegosa2024pacchernoff" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-1.
+4.
 </td>
 <td>
 <a href='https://www.jair.org/index.php/jair/article/view/17036' target='_blank'><img src="images/publications/masegosa2024pacchernoff.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -125,7 +199,7 @@ This paper introduces a distribution-dependent PAC-Chernoff bound that exhibits 
 
 <tr id="tr-casado2024pacbayeschernoff" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+5.
 </td>
 <td>
 <a href='https://openreview.net/forum?id=CyzZeND3LB' target='_blank'><img src="images/publications/casado2024pacbayeschernoff.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -146,7 +220,7 @@ We introduce a new PAC-Bayes oracle bound for unbounded losses that extends Cram
 
 <tr id="tr-ortega2024variational" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-3.
+6.
 </td>
 <td>
 <a href='https://proceedings.mlr.press/v235/ortega24a.html' target='_blank'><img src="images/publications/ortega2024variational.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -167,7 +241,7 @@ The Linearized Laplace Approximation (LLA) has been recently used to perform unc
 
 <tr id="tr-zhang2024cold" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-4.
+7.
 </td>
 <td>
 <a href='https://openreview.net/forum?id=GZORXGxHHT' target='_blank'><img src="images/publications/zhang2024cold.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -191,7 +265,7 @@ The cold posterior effect (CPE) (Wenzel et al., 2020) in Bayesian deep learning 
 
 <tr id="tr-ortega2023deep" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-5.
+8.
 </td>
 <td>
 <a href='https://openreview.net/forum?id=8aeSJNbmbQq' target='_blank'><img src="images/publications/ortega2023deep.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -215,7 +289,7 @@ Implicit processes (IPs) are a generalization of Gaussian processes (GPs). IPs m
 
 <tr id="tr-pmlr-v151-ortega22a" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-6.
+9.
 </td>
 <td>
 <a href='https://proceedings.mlr.press/v151/ortega22a.html' target='_blank'><img src="images/publications/pmlr-v151-ortega22a.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -236,7 +310,7 @@ Ensembles are widely used in machine learning and, usually, provide state-of-the
 
 <tr id="tr-santana2022correcting" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-7.
+10.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2207.10673' target='_blank'><img src="images/publications/santana2022correcting.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
@@ -266,6 +340,26 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
     Fixed-Mean Gaussian Processes for ad-hoc Bayesian Deep Learning (under review)
         [<a href="https://arxiv.org/abs/2412.04177">pre-print</a>]
     <br><p style="color:grey;font-size:1.4rem">Converting models to Bayesian by creating a Gaussian Process with fixed predictive mean to that model.</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
+</tr>
+<tr>
+  <td>
+  <!-- <div style='float: right'></div> -->
+  <div>
+    Regularization as Estimation, A PAC-Bayes-Chernoff Approach
+    <br><p style="color:grey;font-size:1.4rem">A prescriptive framework, grounded in PAC-Bayes-Chernoff bounds, that reframes regularization as a statistical estimation problem.</p>
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'></td> -->
+</tr>
+<tr>
+  <td>
+  <!-- <div style='float: right'></div> -->
+  <div>
+    Revisiting the Marginal Likelihood through a PAC-Bayesian lens
+    <br><p style="color:grey;font-size:1.4rem">While marginal likelihood remains a critical component, generalization in Bayesian models depends on additional factors beyond marginal likelihood alone.</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'></td> -->
@@ -323,17 +417,29 @@ Model selection in machine learning (ML) is a crucial part of the Bayesian learn
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
+    <span class='cvdate'>2025</span>
+    <a href="https://github.com/Ludvins/Bayesipy">Ludvins/Bayesipy</a> |
+    <i class="fa fas fa-star"></i> 19 |
+    <em>Full post-hoc suite that includes Variational (VaLLA) and Nyström (ELLA) LLA variants, FMGPs, SNGPs abd MFVI. Along with loaderrs for benchmarking on pre-defined data and models.</em>
+    <!--  -->
+    <!--     Ludvins/Bayesipy  -->
+    <!--  -->
+  </td>
+</tr>
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
+  <td>
     <span class='cvdate'>2024</span>
     <a href="https://github.com/AlexImmer/Laplace">AlexImmer/Laplace</a> |
     <i class="fa fas fa-star"></i> 441 |
-    <em>Implemented Functional (GP) Laplace, working on implementing Variational (VaLLA) and Nyström (ELLA) variants.</em>
+    <em>Implemented Functional (GP) Laplace.</em>
     <!--  -->
     <!--     AlexImmer/Laplace  -->
     <!--  -->
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
     <span class='cvdate'>2017</span>
     <a href="https://github.com/libreim/apuntesDGIIM">libreim/apuntesDGIIM</a> |
