@@ -149,19 +149,19 @@ Deep neural networks (DNNs) often produce overconfident out-of-distribution pred
 </tr>
 
 
-<tr id="tr-ortega2026large" >
+<tr id="tr-ortega2026slarge" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 3.
 </td>
 <td>
-<a href='' target='_blank'><img src="images/publications/ortega2026large.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
+<a href='' target='_blank'><img src="images/publications/ortega2026slarge.png" onerror="this.style.display='none'" class="publicationImg"/></a> 
 <em><a href='' target='_blank'>A Large Deviation Theory Analysis on the Implicit Bias of SGD</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_ortega2026large").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
+    onclick='$("#abs_ortega2026slarge").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A.&nbsp;Ortega</strong> and Andrés&nbsp;R&nbsp;Masegosa<br>
 Neurocomputing 2026  <br>
 
-<div id="abs_ortega2026large" style="text-align: justify; display: none" markdown="1">
+<div id="abs_ortega2026slarge" style="text-align: justify; display: none" markdown="1">
 <br> 
 Stochastic Gradient Descent (SGD) is the primary optimization method used in deep learning, yet the reasons behind its ability to select models that generalize effectively remain unclear. This paper develops a new perspective based on Large Deviation Theory (LDT). We show that the generalization error can be decomposed into three terms: the expected loss, a component that reflects the concentration of the empirical loss around its mean, and a component that captures the abnormality of deviations arising from stochastic sampling. This decomposition highlights a key difference between optimization methods: while full-batch Gradient Descent tends to exploit poorly concentrated and abnormal fluctuations—often leading to overfitting—mini-batch SGD naturally biases the search towards models with tighter concentration and fewer abnormal deviations. The analysis relies on standard assumptions such as i.i.d data and smooth loss functions. Experiments with deep convolutional networks support the theoretical findings, showing that smaller batch sizes and $\ell_2$ regularization reinforce the preference for models with smaller generalization error. These results position LDT as a useful tool for understanding implicit regularization in SGD and suggest directions for extending this perspective to broader machine learning settings.
 </div>
