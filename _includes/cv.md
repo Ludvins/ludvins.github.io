@@ -117,7 +117,7 @@ My research focuses on Function-Space Variational Inference, Linearized Laplace 
 [<a href='javascript:;'
     onclick='$("#abs_ortega2026scalable").toggle()'>abs</a>] [<a href='https://github.com/Ludvins/BayesiPy' target='_blank'>code</a>] <br>
 <strong>Luis&nbsp;A&nbsp;Ortega</strong>, <a href='https://www.iit.comillas.edu/personas/srsantana' target='_blank'>Simón&nbsp;Rodríguez-Santana</a>, and <a href='https://dhnzl.org' target='_blank'>Daniel&nbsp;Hernández-Lobato</a><br>
-European Symposium on Artificial Neural Networks (ESANN) 2026  <br>
+European Symposium on Artificial Neural Networks (ESANN). Spotlight talk. 2026  <br>
 
 <div id="abs_ortega2026scalable" style="text-align: justify; display: none" markdown="1">
 <br> 
