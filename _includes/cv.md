@@ -158,7 +158,7 @@ Deep neural networks (DNNs) often produce overconfident out-of-distribution pred
 <em><a href='' target='_blank'>A Large Deviation Theory Analysis on the Implicit Bias of SGD</a> </em> 
 [<a href='javascript:;'
     onclick='$("#abs_ortega2026slarge").toggle()'>abs</a>] [<a href='' target='_blank'>code</a>] <br>
-<strong>Luis&nbsp;A.&nbsp;Ortega</strong> and Andrés&nbsp;R&nbsp;Masegosa<br>
+<strong>Luis&nbsp;A.&nbsp;Ortega</strong> and <a href='https://andresmasegosa.github.io/' target='_blank'>Andrés&nbsp;R.&nbsp;Masegosa</a><br>
 Neurocomputing 2026  <br>
 
 <div id="abs_ortega2026slarge" style="text-align: justify; display: none" markdown="1">
