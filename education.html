@@ -27,6 +27,13 @@ description: Education and academic training for Luis A. Ortega.
           {% if degree.detail %}
             <p class="education-detail">{{ degree.detail }}</p>
           {% endif %}
+          {% if degree.links %}
+            <div class="inline-actions education-links">
+              {% for link in degree.links %}
+                <a href="{{ link.url }}">{{ link.label }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
       </article>
     {% endfor %}

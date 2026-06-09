@@ -4,6 +4,9 @@ degrees:
     title: "Ph.D. Student"
     institution: "Autonomous University of Madrid"
     detail: "Thesis: <em>Uncertainty Estimation and Generalization Bounds for Modern Deep Learning</em>"
+    links:
+      - label: "Thesis web page"
+        url: "https://ludvins.github.io/thesis/"
     accent: "oxblood"
 
   - date: "2024-Present"
