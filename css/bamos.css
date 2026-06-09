@@ -26,15 +26,7 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 70px,
-      var(--rule) 71px,
-      transparent 72px
-    ),
-    var(--paper);
+  background: var(--paper);
   color: var(--ink);
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
