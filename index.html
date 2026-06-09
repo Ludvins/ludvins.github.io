@@ -85,9 +85,9 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
         <p class="section-lead">
           I am a Postdoctoral Researcher in the Department of Computer Science at
           Aalborg University, working in the Section for Distributed, Embedded and
-          Intelligent Systems. My work connects probabilistic machine learning
-          and uncertainty quantification with the section's broader focus on
-          distributed, embedded, and intelligent systems.
+          Intelligent Systems. My work focuses on making modern neural networks
+          more reliable by combining probabilistic inference, uncertainty
+          quantification, and generalization theory.
         </p>
       </div>
       <aside class="position-card accent-oxblood">
@@ -152,7 +152,7 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
   <section class="section-block selected-work">
     <p class="section-kicker">Selected Work</p>
     <div class="selected-list">
-      {% assign selected_publication_ids = 'scalable-linearized-laplace,variational-linearized-laplace,pac-chernoff-bounds' | split: ',' %}
+      {% assign selected_publication_ids = 'diversity-generalization-ensembles,variational-linearized-laplace,pac-bayes-chernoff' | split: ',' %}
       {% for selected_id in selected_publication_ids %}
         {% for publication in site.data.publications %}
           {% if publication.id == selected_id %}
