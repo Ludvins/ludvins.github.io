@@ -1,14 +1,20 @@
-# About
-This is the source code for my personal website.
-Unless stated otherwise, all content is MIT-licensed,
-and some of the CV portions are created with the code
-in the [ludvins/cv](https://github.com/ludvins/cv) repo.
+# ludvins.github.io
 
-# w3c compliance continuous integration
-Travis CI builds the static website with Jekyll and uses
-[validate.rb](validate.rb) to check content for w3c compliance.
-Simon Sigurdhsson wrote the
-[original validate.rb script](https://github.com/urdh/blog/blob/gh-pages/validate.rb),
-available in the public domain by the CC0 license,
-and the modifications here are also available in the public domain
-by the CC0 license.
+Source for the personal academic website at https://ludvins.github.io.
+
+## Structure
+
+- `_data/publications.yml`: publication metadata, abstracts, tags, and links.
+- `_data/education.yml`: education timeline and academic honors.
+- `_data/code.yml`: research-code entries.
+- `_includes/publication-card.html`: shared publication rendering.
+- `_layouts/base.liquid`: site shell and navigation.
+- `css/site.css`: site styling.
+- `js/site.js`: publication search and filters.
+
+Run locally with:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```

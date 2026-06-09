@@ -157,39 +157,28 @@ description: Probabilistic machine learning research by Luis A. Ortega.
   <section class="section-block selected-work">
     <p class="section-kicker">Selected Work</p>
     <div class="selected-list">
-      <article class="selected-card accent-oxblood">
-        <div>
-          <p>ESANN 2026 &middot; Spotlight</p>
-          <h3>Scalable Linearized Laplace Approximation via Surrogate Neural Kernel</h3>
-          <span>Kernel approximation without large Jacobians for predictive uncertainty.</span>
-        </div>
-        <div class="inline-actions">
-          <a href="/publications/#scalable-linearized-laplace">Abstract</a>
-          <a href="https://github.com/Ludvins/BayesiPy">Code</a>
-        </div>
-      </article>
-      <article class="selected-card accent-oxblood">
-        <div>
-          <p>ICML 2024</p>
-          <h3>Variational Linearized Laplace Approximation for Bayesian Deep Learning</h3>
-          <span>Sparse variational GP formulation for efficient post-hoc uncertainty.</span>
-        </div>
-        <div class="inline-actions">
-          <a href="/publications/#variational-linearized-laplace">Abstract</a>
-          <a href="https://github.com/Ludvins/Variational-LLA">Code</a>
-        </div>
-      </article>
-      <article class="selected-card accent-oxblood">
-        <div>
-          <p>JAIR 2025 &middot; ECAI Spotlight</p>
-          <h3>PAC-Chernoff Bounds: Understanding Generalization in the Interpolation Regime</h3>
-          <span>Distribution-dependent bounds and smoothness language for interpolating models.</span>
-        </div>
-        <div class="inline-actions">
-          <a href="/publications/#pac-chernoff-bounds">Abstract</a>
-          <a href="https://github.com/Ludvins/2024_PAC-Chernoff-Bound">Code</a>
-        </div>
-      </article>
+      {% assign selected_publication_ids = 'scalable-linearized-laplace,variational-linearized-laplace,pac-chernoff-bounds' | split: ',' %}
+      {% for selected_id in selected_publication_ids %}
+        {% for publication in site.data.publications %}
+          {% if publication.id == selected_id %}
+            <article class="selected-card accent-{{ publication.accent | default: 'oxblood' }}">
+              <div>
+                <p>{{ publication.venue }}</p>
+                <h3>{{ publication.title }}</h3>
+                <span>{{ publication.summary }}</span>
+              </div>
+              <div class="inline-actions">
+                <a href="/publications/#{{ publication.id }}">Abstract</a>
+                {% for link in publication.links %}
+                  {% if link.label == 'Code' %}
+                    <a href="{{ link.url }}">Code</a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </div>
   </section>
 </main>

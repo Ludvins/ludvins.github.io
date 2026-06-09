@@ -1,0 +1,40 @@
+{% assign publication = include.publication %}
+<article
+  class="publication-card{% unless publication.links %} no-actions{% endunless %} accent-{{ publication.accent | default: 'oxblood' }}{% if publication.ongoing %} ongoing-card{% endif %}"
+  id="{{ publication.id }}"
+  data-year="{{ publication.year }}"
+  data-tags="{{ publication.tags | join: ' ' }}"
+  data-title="{{ publication.search | default: publication.title | downcase }}"
+>
+  <div class="pub-year"><span>{{ publication.year | capitalize }}</span></div>
+  <div class="pub-content">
+    <h2>{{ publication.title }}</h2>
+    {% if publication.authors %}
+      <p class="authors">{{ publication.authors }}</p>
+    {% endif %}
+    {% if publication.venue %}
+      <p class="venue">{{ publication.venue }}</p>
+    {% endif %}
+    <p>{{ publication.summary }}</p>
+    {% if publication.labels %}
+      <div class="tag-row compact">
+        {% for label in publication.labels %}
+          <span>{{ label }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if publication.abstract %}
+      <details class="publication-abstract">
+        <summary>Abstract</summary>
+        <p>{{ publication.abstract }}</p>
+      </details>
+    {% endif %}
+  </div>
+  {% if publication.links %}
+    <div class="pub-actions">
+      {% for link in publication.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

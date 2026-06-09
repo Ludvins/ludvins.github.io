@@ -1,27 +1,15 @@
 name: Luis A. Ortega
 description: Probabilistic machine learning research by Luis A. Ortega.
-url: http://ludvins.github.io
+url: https://ludvins.github.io
 destination: ./_site
-twitter: LAOrtega_
-lsi: false
-port: 4000
-markdown: kramdown
-future: true
-kramdown:
-  parse_block_html: false
-  syntax_highlighter: rouge
 permalink: pretty
-#paginate: 5
+
 plugins:
   - jekyll-sitemap
 
 exclude:
-  - .travis.yml
-  - validate.rb
   - README.md
   - Gemfile
   - Gemfile.lock
-  - bower_components
-  - update-vendor-deps.sh
+  - node_modules
   - vendor/bundle
-  - vendor/bower.json

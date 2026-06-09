@@ -1,13 +1,9 @@
-_posts/ideas
-
 *.swp
 
 /_site/
-/images/latex/
-
-bower_components
-
+.jekyll-cache/
 .jekyll-metadata
 .bundle
+node_modules/
 vendor/bundle
 Gemfile.lock

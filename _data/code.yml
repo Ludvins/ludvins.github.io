@@ -1,0 +1,17 @@
+- title: "BayesiPy"
+  meta: "2025 &middot; primary research code"
+  description: "Post-hoc Bayesian deep-learning suite with VaLLA, ELLA, FMGP, SNGP, and MFVI components."
+  url: "https://github.com/Ludvins/BayesiPy"
+  accent: "oxblood"
+
+- title: "Laplace"
+  meta: "2024 &middot; contribution"
+  description: "Functional Gaussian-process Laplace implementation for the broader Laplace approximation toolkit."
+  url: "https://github.com/AlexImmer/Laplace"
+  accent: "olive"
+
+- title: "apuntesDGIIM"
+  meta: "2017 &middot; teaching material"
+  description: "Open notes for the double degree in computer science and mathematics at Granada."
+  url: "https://github.com/libreim/apuntesDGIIM"
+  accent: "olive"

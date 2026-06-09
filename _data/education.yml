@@ -1,0 +1,53 @@
+degrees:
+  - date: "11/2021-11/2025"
+    label: "Doctoral training"
+    title: "Ph.D. Student"
+    institution: "Autonomous University of Madrid"
+    detail: "Thesis: <em>Uncertainty Estimation and Generalization Bounds for Modern Deep Learning</em>"
+    accent: "oxblood"
+
+  - date: "2024-Present"
+    label: "Bachelor studies"
+    title: "B.S. in Physics"
+    institution: "National Distance Education University"
+    accent: "olive"
+
+  - date: "2020-2022"
+    label: "Master studies"
+    title: "M.S. in Data Science"
+    institution: "Autonomous University of Madrid"
+    detail: "Master thesis: <em>Deep Variational Implicit Processes</em>"
+    accent: "oxblood"
+
+  - date: "2015-2020"
+    label: "Bachelor degree"
+    title: "B.S. in Computer Science"
+    institution: "University of Granada"
+    accent: "olive"
+
+  - date: "2015-2020"
+    label: "Bachelor degree"
+    title: "B.S. in Mathematics"
+    institution: "University of Granada"
+    accent: "olive"
+
+honors:
+  - date: "2023"
+    title: "Santander-UAM Scholarship"
+    description: "Research stay on uncertainty estimation in large language models at the University of Cambridge."
+    accent: "oxblood"
+
+  - date: "2021"
+    title: "FPI-UAM Scholarship"
+    description: "Competitive predoctoral contract for training research personnel at the Autonomous University of Madrid."
+    accent: "olive"
+
+  - date: "2020"
+    title: "Research Collaboration Scholarship"
+    description: "Department of Computer Science, Autonomous University of Madrid."
+    accent: "olive"
+
+  - date: "2020"
+    title: "Highest mark on bachelor's thesis"
+    description: "10/10 for the thesis <em>Statistical Models with Variational Methods</em> at the University of Granada."
+    accent: "olive"
