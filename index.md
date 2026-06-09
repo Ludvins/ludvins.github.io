@@ -1,63 +1,196 @@
 ---
-layout: index
+layout: base
 title: Luis A. Ortega
+nav_key: research
+description: Probabilistic machine learning research by Luis A. Ortega.
 ---
 
----
+<main class="page-shell home-page">
+  <section class="home-hero">
+    <div class="hero-copy">
+      <p class="section-kicker">Academic Profile</p>
+      <h1>Luis A. Ortega</h1>
+      <p class="role-line">Postdoctoral Researcher &middot; Aalborg University</p>
+      <h2>Probabilistic machine learning for uncertainty, inference, and generalization.</h2>
+      <p class="lead-copy">
+        Function-space variational inference, linearized Laplace approximations,
+        deep ensembles, and Chernoff-style generalization bounds.
+      </p>
+      <div class="tag-row" aria-label="Research areas">
+        <span>Bayesian deep learning</span>
+        <span>Variational inference</span>
+        <span>Generalization bounds</span>
+        <span>Deep ensembles</span>
+      </div>
+      <div class="hero-action-line">
+        <div class="button-row">
+          <a class="button button-primary" href="/publications/">View publications</a>
+          <a class="button" href="/data/cv.pdf">Download CV</a>
+          <a class="button" href="mailto:laoa@cs.aau.dk">Email</a>
+        </div>
+        <div class="metric-row" aria-label="Research metrics">
+          <div class="metric-card">
+            <strong>10</strong>
+            <span>Publications</span>
+          </div>
+          <div class="metric-card">
+            <strong>3</strong>
+            <span>Ongoing projects</span>
+          </div>
+          <div class="metric-card">
+            <strong>4</strong>
+            <span>Research lines</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-{% include cv.md %}
+    <aside class="profile-card" aria-label="Current profile">
+      <div class="profile-intro">
+        <figure class="profile-photo">
+          <img src="/images/me.png" alt="Luis A. Ortega" />
+        </figure>
+        <div>
+          <p class="micro-label">Current position</p>
+          <h2>Postdoctoral Researcher</h2>
+          <p>Aalborg University, Denmark &middot; 2026-Present</p>
+        </div>
+      </div>
+      <dl class="profile-meta">
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:laoa@cs.aau.dk">laoa@cs.aau.dk</a></dd>
+        </div>
+        <div>
+          <dt>Links</dt>
+          <dd>
+            <a href="https://github.com/ludvins">GitHub</a> &middot;
+            <a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Scholar</a> &middot;
+            <a href="http://www.linkedin.com/in/ludvins">LinkedIn</a>
+          </dd>
+        </div>
+        <div>
+          <dt>Updated</dt>
+          <dd>{% include last-updated.txt %}</dd>
+        </div>
+      </dl>
+    </aside>
+  </section>
 
-<!--
-## <i class="fa fa-chevron-right"></i> Recent Blog Posts
+  <section class="section-block current-position-section">
+    <p class="section-kicker">Current Position</p>
+    <div class="current-position-grid">
+      <div>
+        <h2>Postdoctoral research at Aalborg University.</h2>
+        <p class="section-lead">
+          I am a Postdoctoral Researcher in the Department of Computer Science at
+          Aalborg University, working in the Section for Distributed, Embedded and
+          Intelligent Systems. My work connects probabilistic machine learning
+          and uncertainty quantification with the section's broader focus on
+          distributed, embedded, and intelligent systems.
+        </p>
+      </div>
+      <aside class="position-card accent-oxblood">
+        <p class="micro-label">Project</p>
+        <h3>EMBARQ</h3>
+        <p>
+          My current work is part of EMBARQ, Evaluating Microbiome-Based
+          Applications for Risk Quantification. The project develops knowledge
+          and AI-supported tools for quantifying the impact and safety of
+          biologicals in agriculture, sustainability, and biodiversity.
+        </p>
+        <div class="inline-actions">
+          <a href="https://vbn.aau.dk/en/organisations/section-for-distributed-embedded-and-intelligent-systems/">Group</a>
+          <a href="https://embarq.dk/">EMBARQ</a>
+        </div>
+      </aside>
+    </div>
+  </section>
 
-<table class="table table-hover">
-  {% for post in site.posts limit: 5 %}
-    {% unless post.draft %}
-    <tr>
-      <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-      <td class="col-md-3" style="text-align: right;">{{ post.date | date: "%B %e, %Y" }}</td>
-    </tr>
-    {% endunless %}
-  {% endfor %}
-</table>
-<h4><a href="/blog">View all</a></h4>
+  <section class="section-block">
+    <p class="section-kicker">Research Scope</p>
+    <h2>A research map for uncertainty and generalization.</h2>
+    <p class="section-lead">
+      Four connected lines organize the work: approximate inference, scalable
+      post-hoc Bayesian methods, generalization bounds, and ensemble behavior.
+    </p>
 
-## <i class="fa fa-chevron-right"></i> Fun Side Projects
-+ [CS conference tracker](https://github.com/bamos/conference-tracker).
-+ [SnowGlobe](https://github.com/bamos/snowglobe):
-  Haskell-driven, small-scale web analytics with minimal configuration.
-+ [My reading list](http://bamos.github.io/reading-list/):
-  YAML data and hosted on GitHub pages.
-+ [dotfiles](https://github.com/bamos/dotfiles):
-  &hearts;
-  [Arch Linux](https://www.archlinux.org/),
-  OSX,
-  [mutt](http://www.mutt.org/),
-  [xmonad](http://xmonad.org/),
-  [i3](https://i3wm.org/),
-  [vim](http://www.vim.org/),
-  [emacs](https://www.gnu.org/software/emacs/),
-  [zsh](http://www.zsh.org/),
-  [mpv](http://mpv.io/),
-  [cmus](https://cmus.github.io/).
-+ [girl](https://github.com/bamos/girl):
-  Scala program to find broken links in GitHub projects.
-+ [zsh-history-analysis](https://github.com/bamos/zsh-history-analysis):
-  Analyze shell usage patterns with Python and R.
-+ [python-scripts](https://github.com/bamos/python-scripts):
-  Short and fun Python scripts.
-+ [This website](https://github.com/bamos/bamos.github.io):
-  Built with Jekyll and hosted on GitHub pages.
-+ [cv](https://github.com/bamos/cv):
-  Python-driven resume-curriculum vitae with Jinja templates.
-+ [yaml-mailer](https://github.com/bamos/yaml-mailer):
-  Email many people different messages.
-+ [latex-templates](https://github.com/bamos/latex-templates)
-  and [beamer-snippets](https://github.com/bamos/beamer-snippets):
-  Personal collection and previewing of LaTeX and Beamer snippets.
-  Admittedly, I now use Keynote for presentations.
--->
+    <div class="research-layout">
+      <div class="topic-grid">
+        <article class="topic-card accent-oxblood">
+          <span>01</span>
+          <h3>Function-space VI</h3>
+          <p>Approximate inference directly over functions, keeping the emphasis on uncertainty and predictive structure.</p>
+        </article>
+        <article class="topic-card accent-olive">
+          <span>02</span>
+          <h3>Linearized Laplace</h3>
+          <p>Post-hoc Bayesian uncertainty for modern neural networks without forcing every page into technical detail.</p>
+        </article>
+        <article class="topic-card accent-oxblood">
+          <span>03</span>
+          <h3>PAC-Chernoff bounds</h3>
+          <p>A path into the generalization-theory work for expert readers and reviewers.</p>
+        </article>
+        <article class="topic-card accent-olive">
+          <span>04</span>
+          <h3>Deep ensembles</h3>
+          <p>Calibration, diversity, and model combination presented as connected research rather than isolated papers.</p>
+        </article>
+      </div>
 
----
+      <aside class="research-note">
+        <h3>Research through-line</h3>
+        <p>
+          The papers move between practical uncertainty estimators and theory for
+          why modern over-parameterized models can still generalize.
+        </p>
+        <ul class="note-list">
+          <li>Post-hoc Bayesian methods for pre-trained neural networks.</li>
+          <li>Function-space inference through Gaussian and implicit processes.</li>
+          <li>Distribution-dependent bounds for interpolation and regularization.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
 
-Last updated on {% include last-updated.txt %}
+  <section class="section-block selected-work">
+    <p class="section-kicker">Selected Work</p>
+    <h2>A curated reading path through the recent work.</h2>
+    <div class="selected-list">
+      <article class="selected-card accent-oxblood">
+        <div>
+          <p>ESANN 2026 &middot; Spotlight</p>
+          <h3>Scalable Linearized Laplace Approximation via Surrogate Neural Kernel</h3>
+          <span>Kernel approximation without large Jacobians for predictive uncertainty.</span>
+        </div>
+        <div class="inline-actions">
+          <a href="/publications/#scalable-linearized-laplace">Abstract</a>
+          <a href="https://github.com/Ludvins/BayesiPy">Code</a>
+        </div>
+      </article>
+      <article class="selected-card accent-oxblood">
+        <div>
+          <p>ICML 2024</p>
+          <h3>Variational Linearized Laplace Approximation for Bayesian Deep Learning</h3>
+          <span>Sparse variational GP formulation for efficient post-hoc uncertainty.</span>
+        </div>
+        <div class="inline-actions">
+          <a href="/publications/#variational-linearized-laplace">Abstract</a>
+          <a href="https://github.com/Ludvins/Variational-LLA">Code</a>
+        </div>
+      </article>
+      <article class="selected-card accent-oxblood">
+        <div>
+          <p>JAIR 2025 &middot; ECAI Spotlight</p>
+          <h3>PAC-Chernoff Bounds: Understanding Generalization in the Interpolation Regime</h3>
+          <span>Distribution-dependent bounds and smoothness language for interpolating models.</span>
+        </div>
+        <div class="inline-actions">
+          <a href="/publications/#pac-chernoff-bounds">Abstract</a>
+          <a href="https://github.com/Ludvins/2024_PAC-Chernoff-Bound">Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
