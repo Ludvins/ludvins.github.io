@@ -314,6 +314,42 @@
     - label: "Code"
       url: "https://github.com/simonrsantana/sparse-implicit-processes"
 
+- id: "flow-transformed-implicit-processes"
+  title: "Flow-Transformed Implicit Processes for Function-Space Variational Inference"
+  year: "ongoing"
+  authors: "Luis A. Ortega, Andrés R. Masegosa, Thomas D. Nielsen"
+  venue: "arXiv 2026"
+  summary: |
+    Uses normalizing flows over finite sampled-function combinations to enrich
+    function-space variational inference with implicit-process priors.
+  abstract: |
+    Implicit-process priors define distributions over functions through flexible generative
+    mechanisms, making them attractive for Bayesian function-space modelling. However,
+    performing posterior inference with such priors is challenging because their induced
+    function-space distributions are typically not available in closed form. One practical
+    strategy is to approximate the prior using a finite collection of sampled functions, and
+    then represent posterior functions as learned combinations of these samples. Existing
+    approaches commonly place a Gaussian variational distribution over the combination
+    weights. While tractable, this choice limits the shapes of posterior uncertainty that
+    can be represented, especially when the true posterior is asymmetric, heavy-tailed, or
+    multimodal. We propose Flow-Transformed Implicit Processes (FTIP), a variational
+    inference method that makes this finite-dimensional function-space approximation more
+    expressive. Instead of using a Gaussian distribution over the combination weights, FTIP
+    uses a normalizing flow to define a richer variational distribution. This induces a
+    flexible posterior distribution over functions while preserving tractable optimization.
+    We train the model using a Black-Box &alpha; objective, allowing us to compare
+    mass-covering and mode-seeking variational behaviour. Experiments show that FTIP
+    captures asymmetric and multimodal posterior structure in function space that Gaussian
+    coefficient approximations tend to smooth or collapse.
+  tags: ["bayesian-dl", "inference", "implicit", "processes", "normalizing-flows"]
+  labels: ["FTIP", "Implicit Processes", "Variational inference", "Preprint"]
+  search: "flow transformed implicit processes function space variational inference ftip arxiv normalizing flows"
+  accent: "oxblood"
+  ongoing: true
+  links:
+    - label: "Preprint"
+      url: "https://arxiv.org/abs/2606.01954"
+
 - id: "fixed-mean-gaussian-processes-for-ad-hoc-bayesian-deep-learning"
   title: "Fixed-Mean Gaussian Processes for ad-hoc Bayesian Deep Learning"
   year: "ongoing"
