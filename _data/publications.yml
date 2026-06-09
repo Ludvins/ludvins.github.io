@@ -350,6 +350,38 @@
     - label: "Preprint"
       url: "https://arxiv.org/abs/2606.01954"
 
+- id: "contrastive-linearized-laplace"
+  title: "Contrastive Linearized Laplace: Loss Geometry, Valid Repairs, and Reliable Cores"
+  year: "ongoing"
+  summary: |
+    Reviews when linearized Laplace is valid for contrastive objectives and uses repaired
+    posteriors to identify stable downstream cores.
+  abstract: |
+    Contrastive learning is based on relations between examples, such as pairs, neighbors,
+    or candidate sets, which makes uncertainty estimation different from standard
+    supervised learning. We study linearized Laplace approximations for contrastive models
+    and show that their validity depends on the curvature of the contrastive loss. InfoNCE
+    and logit-based losses give valid positive semidefinite curvature, while distance-based
+    and margin losses can create invalid negative curvature for negative pairs. We propose
+    simple spectral and radial repairs that make the posterior well defined without
+    retraining the encoder. We also show that embedding variance alone is not a reliable
+    measure of uncertainty for contrastive models. A point may have high or low variance
+    without this reflecting whether its nearest neighbors, cluster assignment, or retrieval
+    decision is stable. These decisions depend on score margins, directions in embedding
+    space, and correlations between competing relations. In this work, we propose to
+    propagate LLA uncertainty to the downstream task by sampling encoders from the repaired
+    posterior. This gives posterior probabilities for relations such as coassignment,
+    neighborhood agreement, or prediction stability. We use these probabilities to select
+    reliable cores: subsets of the downstream solution whose assignments remain stable
+    under posterior perturbations. Experiments on synthetic data, EMNIST, CIFAR-100, genome
+    clustering, and pathology show that these reliable cores give useful accuracy-coverage
+    tradeoffs.
+  tags: ["bayesian-dl", "inference", "contrastive", "laplace", "uncertainty"]
+  labels: ["Contrastive", "LLA", "Repairs", "Reliable cores"]
+  search: "contrastive linearized laplace loss geometry valid repairs reliable cores uncertainty reliable cores"
+  accent: "oxblood"
+  ongoing: true
+
 - id: "fixed-mean-gaussian-processes-for-ad-hoc-bayesian-deep-learning"
   title: "Fixed-Mean Gaussian Processes for ad-hoc Bayesian Deep Learning"
   year: "ongoing"
