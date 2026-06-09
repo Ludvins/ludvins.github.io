@@ -1,0 +1,32 @@
+---
+layout: base
+title: Experience
+nav_key: experience
+permalink: /experience/
+description: Academic and research positions held by Luis A. Ortega.
+---
+
+<main class="page-shell content-page experience-page">
+  <section class="page-hero compact">
+    <p class="section-kicker">Experience</p>
+    <h1>Research, teaching, and visiting positions.</h1>
+    <p>
+      Past and current academic positions from the current CV, organized as a
+      timeline.
+    </p>
+  </section>
+
+  <section class="education-timeline" aria-label="Experience timeline">
+    {% for position in site.data.experience %}
+      <article class="timeline-item">
+        <div class="timeline-date">{{ position.date }}</div>
+        <div class="timeline-card accent-{{ position.accent | default: 'olive' }}">
+          <p class="micro-label">{{ position.label }}</p>
+          <h2>{{ position.title }}</h2>
+          <p>{{ position.institution }}</p>
+          <p class="education-detail">{{ position.description }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+</main>

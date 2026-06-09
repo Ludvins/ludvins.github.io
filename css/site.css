@@ -155,7 +155,7 @@ summary {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 28px;
   min-height: 34px;
 }
 
