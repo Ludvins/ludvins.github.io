@@ -739,10 +739,20 @@ summary {
 }
 
 .inline-actions a,
+.inline-actions button,
 .pub-actions a,
 .publication-abstract summary {
+  border: 0;
+  background: transparent;
   color: var(--oxblood);
+  font: inherit;
   font-weight: 900;
+  text-transform: none;
+}
+
+.inline-actions button {
+  padding: 0;
+  cursor: pointer;
 }
 
 .inline-actions {
