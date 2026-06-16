@@ -729,6 +729,29 @@ summary {
   font-weight: 600;
 }
 
+.selected-abstract-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.selected-abstract-toggle:not(:checked) + .selected-card .selected-abstract {
+  display: none;
+}
+
+.selected-abstract-toggle:checked + .selected-card .selected-abstract {
+  display: block;
+}
+
+.selected-abstract-toggle:focus-visible + .selected-card .inline-actions label {
+  outline: 2px solid var(--oxblood);
+  outline-offset: 3px;
+}
+
 .selected-card .selected-abstract {
   margin: 12px 0 0;
   color: var(--muted);
@@ -739,7 +762,7 @@ summary {
 }
 
 .inline-actions a,
-.inline-actions button,
+.inline-actions label,
 .pub-actions a,
 .publication-abstract summary {
   border: 0;
@@ -750,8 +773,7 @@ summary {
   text-transform: none;
 }
 
-.inline-actions button {
-  padding: 0;
+.inline-actions label {
   cursor: pointer;
 }
 

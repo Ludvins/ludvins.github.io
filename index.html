@@ -159,21 +159,20 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
       {% for selected_id in selected_publication_ids %}
         {% for publication in site.data.publications %}
           {% if publication.id == selected_id %}
+            <input
+              class="selected-abstract-toggle"
+              type="checkbox"
+              id="selected-abstract-toggle-{{ publication.id }}"
+              aria-controls="selected-abstract-{{ publication.id }}"
+            />
             <article class="selected-card accent-{{ publication.accent | default: 'oxblood' }}">
               <div>
                 <p>{{ publication.venue }}</p>
                 <h3>{{ publication.title }}</h3>
-                <p id="selected-abstract-{{ publication.id }}" class="selected-abstract" hidden>{{ publication.abstract }}</p>
+                <p id="selected-abstract-{{ publication.id }}" class="selected-abstract">{{ publication.abstract }}</p>
               </div>
               <div class="inline-actions">
-                <button
-                  type="button"
-                  class="inline-action selected-abstract-toggle"
-                  aria-controls="selected-abstract-{{ publication.id }}"
-                  aria-expanded="false"
-                >
-                  Abstract
-                </button>
+                <label for="selected-abstract-toggle-{{ publication.id }}">Abstract</label>
                 {% for link in publication.links %}
                   {% if link.label == 'PDF' %}
                     <a href="{{ link.url }}">Paper</a>

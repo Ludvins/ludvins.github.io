@@ -66,20 +66,3 @@
     });
   });
 })();
-
-(function () {
-  var toggles = Array.prototype.slice.call(document.querySelectorAll(".selected-abstract-toggle"));
-
-  toggles.forEach(function (toggle) {
-    toggle.addEventListener("click", function () {
-      var target = document.getElementById(toggle.getAttribute("aria-controls"));
-      if (!target) {
-        return;
-      }
-
-      var isExpanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!isExpanded));
-      target.hidden = isExpanded;
-    });
-  });
-})();
