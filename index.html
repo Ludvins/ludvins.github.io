@@ -163,13 +163,17 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
               <div>
                 <p>{{ publication.venue }}</p>
                 <h3>{{ publication.title }}</h3>
-                <span>{{ publication.summary }}</span>
+                <p class="selected-abstract">{{ publication.abstract }}</p>
               </div>
               <div class="inline-actions">
-                <a href="/publications/#{{ publication.id }}">Abstract</a>
+                {% for link in publication.links %}
+                  {% if link.label == 'PDF' %}
+                    <a href="{{ link.url }}">Paper</a>
+                  {% endif %}
+                {% endfor %}
                 {% for link in publication.links %}
                   {% if link.label == 'Code' %}
-                    <a href="{{ link.url }}">Code</a>
+                    <a href="{{ link.url }}">{{ link.label }}</a>
                   {% endif %}
                 {% endfor %}
               </div>

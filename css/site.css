@@ -729,6 +729,15 @@ summary {
   font-weight: 600;
 }
 
+.selected-card .selected-abstract {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1.45;
+  text-transform: none;
+}
+
 .inline-actions a,
 .pub-actions a,
 .publication-abstract summary {
