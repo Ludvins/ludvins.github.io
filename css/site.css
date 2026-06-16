@@ -567,7 +567,7 @@ summary {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 410px;
   gap: 76px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .current-position-grid {
@@ -615,7 +615,9 @@ summary {
 .topic-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 28px 34px;
+  height: 100%;
 }
 
 .topic-card,
