@@ -639,13 +639,6 @@ summary {
   padding: 24px 28px 20px;
 }
 
-.topic-card span {
-  color: var(--oxblood);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
 .topic-card h3,
 .selected-card h3,
 .selected-card h2,
@@ -659,6 +652,7 @@ summary {
 }
 
 .topic-card h3 {
+  margin: 0 0 12px;
   font-size: 1.34rem;
 }
 
@@ -1368,19 +1362,11 @@ summary {
   }
 
   .topic-card {
-    display: grid;
-    grid-template-columns: 28px minmax(0, 1fr);
-    column-gap: 10px;
     min-height: 96px;
     padding: 20px 24px 18px;
   }
 
-  .topic-card span {
-    grid-row: span 2;
-  }
-
   .topic-card h3 {
-    margin-top: 0;
     font-size: 1.12rem;
   }
 
