@@ -747,7 +747,15 @@ summary {
   display: block;
 }
 
-.selected-abstract-toggle:focus-visible + .selected-card .inline-actions label {
+.selected-abstract-toggle:checked + .selected-card .selected-abstract-label-show {
+  display: none;
+}
+
+.selected-abstract-toggle:not(:checked) + .selected-card .selected-abstract-label-hide {
+  display: none;
+}
+
+.selected-abstract-toggle:focus-visible + .selected-card .selected-abstract-control {
   outline: 2px solid var(--oxblood);
   outline-offset: 3px;
 }
@@ -761,8 +769,23 @@ summary {
   text-transform: none;
 }
 
+.selected-abstract-control {
+  display: inline-flex;
+  margin: 2px 0 0;
+  cursor: pointer;
+}
+
+.selected-work .selected-card {
+  align-items: start;
+}
+
+.selected-work .selected-card .inline-actions {
+  align-self: start;
+  padding-top: 30px;
+}
+
 .inline-actions a,
-.inline-actions label,
+.selected-abstract-control,
 .pub-actions a,
 .publication-abstract summary {
   border: 0;
@@ -771,10 +794,6 @@ summary {
   font: inherit;
   font-weight: 900;
   text-transform: none;
-}
-
-.inline-actions label {
-  cursor: pointer;
 }
 
 .inline-actions {
@@ -1381,6 +1400,10 @@ summary {
 
   .inline-actions {
     justify-content: flex-start;
+  }
+
+  .selected-work .selected-card .inline-actions {
+    padding-top: 0;
   }
 
   .publication-tools {
