@@ -733,7 +733,8 @@ summary {
   white-space: nowrap;
 }
 
-.selected-abstract-toggle:not(:checked) + .selected-card .selected-abstract {
+.selected-card .selected-abstract,
+.selected-abstract-label-hide {
   display: none;
 }
 
@@ -745,8 +746,8 @@ summary {
   display: none;
 }
 
-.selected-abstract-toggle:not(:checked) + .selected-card .selected-abstract-label-hide {
-  display: none;
+.selected-abstract-toggle:checked + .selected-card .selected-abstract-label-hide {
+  display: inline;
 }
 
 .selected-abstract-toggle:focus-visible + .selected-card .selected-abstract-control {
