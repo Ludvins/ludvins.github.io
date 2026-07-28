@@ -314,6 +314,40 @@
     - label: "Code"
       url: "https://github.com/simonrsantana/sparse-implicit-processes"
 
+- id: "loss-tail-sgd"
+  title: "Loss-Tail SGD: Generalization-Aware Optimization via Batch Rejection Sampling"
+  year: "ongoing"
+  summary: |
+    Filters candidate mini-batches through loss-tail rejection sampling to reduce
+    data-dependent bias, improving generalization and calibration without changing the
+    optimizer or objective.
+  abstract: |
+    Stochastic gradient descent (SGD) aims to optimize the population loss while observing
+    only the empirical loss on a finite sample. Once the iterate depends on the training
+    data, as it does throughout optimization, the empirical loss ceases to be an unbiased
+    estimate of its population counterpart. This data-dependent bias accumulated along the
+    trajectory is the mechanism behind the generalization gap. We show that this gap admits
+    an exact one-dimensional representation: the integrated discrepancy between the
+    population and empirical batch-loss laws. This identity motivates a correction that
+    touches only the mini-batch stream: it filters proposed batches toward the population
+    batch-loss law, leaving the optimizer, architecture, and training objective unchanged.
+    We realize this correction as rejection sampling in an augmented tail space, where each
+    batch is summarized by which side of the loss distribution it falls on and a rarity
+    score within that tail. The rejection rule reduces to a closed-form per-batch acceptance
+    probability estimated from large-deviation rate functions of batch-average losses on a
+    small held-out set&mdash;no density estimation required. The resulting procedure,
+    <em>Loss-Tail SGD</em> (LT-SGD), modifies only the gate that turns a candidate batch into
+    a gradient update. Across CIFAR-10/100 and OGBG-molbace, spanning nine convolutional and
+    graph architectures and at matched gradient-update budgets and wall-clock time, LT-SGD
+    lifts accuracy or AUC by 5 points or more on most dataset-architecture configurations
+    and produces better-calibrated predictors than standard SGD and competing data-filtering
+    baselines.
+  tags: ["bounds", "generalization", "sgd", "optimization", "rejection-sampling", "ldt", "calibration"]
+  labels: ["LT-SGD", "Generalization", "Rejection sampling", "Calibration"]
+  search: "loss tail sgd generalization aware optimization batch rejection sampling large deviation calibration"
+  accent: "oxblood"
+  ongoing: true
+
 - id: "flow-transformed-implicit-processes"
   title: "Flow-Transformed Implicit Processes for Function-Space Variational Inference"
   year: "ongoing"
@@ -388,6 +422,23 @@
   summary: |
     Converting models to Bayesian predictors by creating a Gaussian process with fixed
     predictive mean.
+  abstract: |
+    Recently, there has been an increasing interest in performing <em>post-hoc</em>
+    uncertainty estimation about the predictions of pre-trained deep neural networks
+    (DNNs). Given a pre-trained DNN via back-propagation, these methods enhance the original
+    network by adding output confidence measures, such as error bars, without compromising
+    its initial accuracy. In this context, we introduce a novel family of sparse variational
+    Gaussian processes (GPs), where the posterior mean is fixed to any continuous function
+    when using a universal kernel. Specifically, we fix the mean of this GP to the output of
+    the pre-trained DNN, allowing our approach to effectively fit the GP's predictive
+    variances to estimate the DNN prediction uncertainty. Our approach leverages variational
+    inference (VI) for efficient stochastic optimization, with per-mini-batch training costs
+    that remain independent of the total number of training points, scaling efficiently to
+    large datasets such as ImageNet. The proposed method, called fixed-mean GP (FMGP), is
+    architecture-agnostic, requiring neither access to the pre-trained model's parameters
+    nor DNN Jacobians. Experimental results demonstrate that FMGP is particularly effective
+    for calibration, remains competitive in predictive scores, and is computationally
+    efficient when compared to state-of-the-art methods for DNN post-hoc Bayesian inference.
   tags: ["bayesian-dl", "inference"]
   search: "fixed mean gaussian processes ad hoc bayesian deep learning"
   accent: "oxblood"
