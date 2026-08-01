@@ -5,22 +5,29 @@ nav_key: research
 description: Probabilistic Machine Learning research by Luis A. Ortega.
 ---
 
+{% assign profile = site.data.profile %}
+{% assign published_count = 0 %}
+{% assign ongoing_count = 0 %}
+{% for publication in site.data.publications %}
+  {% if publication.ongoing %}
+    {% assign ongoing_count = ongoing_count | plus: 1 %}
+  {% else %}
+    {% assign published_count = published_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
 <main class="page-shell home-page">
   <section class="home-hero">
     <div class="hero-copy">
       <p class="section-kicker">Academic Profile</p>
-      <h1>Luis A. Ortega</h1>
-      <p class="role-line">Postdoctoral Researcher &middot; Aalborg University</p>
-      <h2>Probabilistic Machine Learning for uncertainty, inference, and generalization.</h2>
-      <p class="lead-copy">
-        Function-space variational inference, linearized Laplace approximations,
-        deep ensembles, and Chernoff-style generalization bounds.
-      </p>
+      <h1>{{ profile.name }}</h1>
+      <p class="role-line">{{ profile.role }} &middot; {{ profile.institution }}</p>
+      <h2>{{ profile.headline }}</h2>
+      <p class="lead-copy">{{ profile.summary }}</p>
       <div class="tag-row" aria-label="Research areas">
-        <span>Bayesian deep learning</span>
-        <span>Variational inference</span>
-        <span>Generalization bounds</span>
-        <span>Deep ensembles</span>
+        {% for area in profile.research_areas %}
+          <span>{{ area.tag }}</span>
+        {% endfor %}
       </div>
       <div class="hero-action-line">
         <div class="button-row">
@@ -29,19 +36,19 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
             <a class="button" href="https://ludvins.github.io/thesis/">PhD thesis</a>
           </div>
           <a class="button" href="/data/cv.pdf">Download CV</a>
-          <a class="button" href="mailto:laoa@cs.aau.dk">Email</a>
+          <a class="button" href="mailto:{{ profile.email }}">Email</a>
         </div>
         <div class="metric-row" aria-label="Research metrics">
           <div class="metric-card">
-            <strong>10</strong>
+            <strong>{{ published_count }}</strong>
             <span>Publications</span>
           </div>
           <div class="metric-card">
-            <strong>6</strong>
+            <strong>{{ ongoing_count }}</strong>
             <span>Ongoing projects</span>
           </div>
           <div class="metric-card">
-            <strong>4</strong>
+            <strong>{{ profile.research_areas | size }}</strong>
             <span>Research lines</span>
           </div>
         </div>
@@ -51,25 +58,26 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
     <aside class="profile-card" aria-label="Current profile">
       <div class="profile-intro">
         <figure class="profile-photo">
-          <img src="/images/me.png" alt="Luis A. Ortega" />
+          <img src="/images/me.png" alt="{{ profile.name }}" />
         </figure>
         <div>
           <p class="micro-label">Current position</p>
-          <h2>Postdoctoral Researcher</h2>
-          <p>Aalborg University, Denmark &middot; 2026-Present</p>
+          <h2>{{ profile.role }}</h2>
+          <p>{{ profile.institution }}, {{ profile.location }} &middot; {{ profile.position_date }}</p>
         </div>
       </div>
       <dl class="profile-meta">
         <div>
           <dt>Email</dt>
-          <dd><a href="mailto:laoa@cs.aau.dk">laoa@cs.aau.dk</a></dd>
+          <dd><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></dd>
         </div>
         <div>
           <dt>Links</dt>
           <dd>
-            <a href="https://github.com/ludvins">GitHub</a> &middot;
-            <a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Scholar</a> &middot;
-            <a href="http://www.linkedin.com/in/ludvins">LinkedIn</a>
+            {% assign featured_links = profile.links | where: 'featured', true %}
+            {% for link in featured_links %}
+              <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} &middot;{% endunless %}
+            {% endfor %}
           </dd>
         </div>
         <div>
@@ -84,27 +92,16 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
     <p class="section-kicker">Current Position</p>
     <div class="current-position-grid">
       <div>
-        <h2>Postdoctoral research at Aalborg University.</h2>
-        <p class="section-lead">
-          I am a Postdoctoral Researcher in the Department of Computer Science at
-          Aalborg University, working in the Section for Distributed, Embedded and
-          Intelligent Systems. My work focuses on making modern neural networks
-          more reliable by combining probabilistic inference, uncertainty
-          quantification, and generalization theory.
-        </p>
+        <h2>{{ profile.current_position.heading }}</h2>
+        <p class="section-lead">{{ profile.current_position.summary }}</p>
       </div>
       <aside class="position-card accent-oxblood">
         <p class="micro-label">Project</p>
-        <h3>EMBARQ</h3>
-        <p>
-          My current work is part of EMBARQ, Evaluating Microbiome-Based
-          Applications for Risk Quantification. The project develops knowledge
-          and AI-supported tools for quantifying the impact and safety of
-          biologicals in agriculture, sustainability, and biodiversity.
-        </p>
+        <h3>{{ profile.current_position.project.name }}</h3>
+        <p>{{ profile.current_position.project.description }}</p>
         <div class="inline-actions">
-          <a href="https://vbn.aau.dk/en/organisations/section-for-distributed-embedded-and-intelligent-systems/">Group</a>
-          <a href="https://embarq.dk/">EMBARQ</a>
+          <a href="{{ profile.current_position.project.group_url }}">Group</a>
+          <a href="{{ profile.current_position.project.project_url }}">{{ profile.current_position.project.name }}</a>
         </div>
       </aside>
     </div>
@@ -115,35 +112,21 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
 
     <div class="research-layout">
       <div class="topic-grid">
-        <article class="topic-card accent-oxblood">
-          <h3>Post-hoc Bayesian inference</h3>
-          <p>Bayesian uncertainty estimation for pre-trained neural networks through linearized Laplace, neural kernels, and scalable approximations.</p>
-        </article>
-        <article class="topic-card accent-olive">
-          <h3>Function-space inference</h3>
-          <p>Gaussian and implicit-process models that place uncertainty directly over functions, including variational and flow-transformed constructions.</p>
-        </article>
-        <article class="topic-card accent-oxblood">
-          <h3>Generalization theory</h3>
-          <p>PAC-Chernoff and large-deviation analyses of interpolation, regularization, and the implicit bias of stochastic optimization.</p>
-        </article>
-        <article class="topic-card accent-olive">
-          <h3>Ensembles and calibration</h3>
-          <p>Theoretical and empirical study of diversity, model combination, and calibrated prediction in neural network ensembles.</p>
-        </article>
+        {% for area in profile.research_areas %}
+          <article class="topic-card accent-{{ area.accent | default: 'olive' }}">
+            <h3>{{ area.title }}</h3>
+            <p>{{ area.description }}</p>
+          </article>
+        {% endfor %}
       </div>
 
       <aside class="research-note">
-        <h3>Research through-line</h3>
-        <p>
-          My work connects practical uncertainty estimators with theory that
-          helps explain why modern over-parameterized models can still
-          generalize.
-        </p>
+        <h3>{{ profile.research_note.heading }}</h3>
+        <p>{{ profile.research_note.body }}</p>
         <ul class="note-list">
-          <li>Post-hoc Bayesian methods for pre-trained neural networks.</li>
-          <li>Function-space inference through Gaussian and implicit processes.</li>
-          <li>Distribution-dependent bounds for interpolation and regularization.</li>
+          {% for point in profile.research_note.points %}
+            <li>{{ point }}</li>
+          {% endfor %}
         </ul>
       </aside>
     </div>

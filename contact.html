@@ -6,6 +6,8 @@ permalink: /contact/
 description: Contact details for Luis A. Ortega.
 ---
 
+{% assign profile = site.data.profile %}
+
 <main class="page-shell content-page contact-page">
   <section class="page-hero compact">
     <p class="section-kicker">Contact</p>
@@ -19,17 +21,16 @@ description: Contact details for Luis A. Ortega.
   <section class="contact-grid">
     <article class="profile-card contact-card">
       <p class="micro-label">Email</p>
-      <h2><a href="mailto:laoa@cs.aau.dk">laoa@cs.aau.dk</a></h2>
-      <p>Aalborg University, Denmark</p>
+      <h2><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></h2>
+      <p>{{ profile.institution }}, {{ profile.location }}</p>
     </article>
 
     <article class="profile-card contact-card">
       <p class="micro-label">Profiles</p>
       <div class="link-stack">
-        <a href="https://github.com/ludvins">GitHub</a>
-        <a href="https://scholar.google.com/citations?user=1Ly8qeoAAAAJ">Google Scholar</a>
-        <a href="http://www.linkedin.com/in/ludvins">LinkedIn</a>
-        <a href="http://twitter.com/LAOrtega_">Twitter</a>
+        {% for link in profile.links %}
+          <a href="{{ link.url }}">{% if link.label == 'Scholar' %}Google Scholar{% else %}{{ link.label }}{% endif %}</a>
+        {% endfor %}
       </div>
     </article>
   </section>

@@ -1,0 +1,110 @@
+name: "Luis A. Ortega"
+initials: "LAO"
+field: "Probabilistic Machine Learning"
+role: "Postdoctoral Researcher"
+institution: "Aalborg University"
+department: "Department of Computer Science"
+location: "Copenhagen, Denmark"
+position_date: "2026-Present"
+email: "laoa@cs.aau.dk"
+website: "https://ludvins.github.io"
+
+headline: "Probabilistic Machine Learning for uncertainty, inference, and generalization."
+summary: >-
+  Function-space variational inference, linearized Laplace approximations,
+  deep ensembles, and Chernoff-style generalization bounds.
+
+links:
+  - label: "GitHub"
+    url: "https://github.com/ludvins"
+    featured: true
+    resume: true
+  - label: "Scholar"
+    url: "https://scholar.google.com/citations?user=1Ly8qeoAAAAJ"
+    featured: true
+    resume: true
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/ludvins"
+    featured: true
+    resume: true
+  - label: "Twitter"
+    url: "https://twitter.com/LAOrtega_"
+    featured: false
+    resume: false
+
+current_position:
+  heading: "Postdoctoral research at Aalborg University."
+  summary: >-
+    I am a Postdoctoral Researcher in the Department of Computer Science at
+    Aalborg University, working in the Section for Distributed, Embedded and
+    Intelligent Systems. My work focuses on making modern neural networks more
+    reliable by combining probabilistic inference, uncertainty quantification,
+    and generalization theory.
+  project:
+    name: "EMBARQ"
+    description: >-
+      My current work is part of EMBARQ, Evaluating Microbiome-Based
+      Applications for Risk Quantification. The project develops knowledge and
+      AI-supported tools for quantifying the impact and safety of biologicals
+      in agriculture, sustainability, and biodiversity.
+    group_url: "https://vbn.aau.dk/en/organisations/section-for-distributed-embedded-and-intelligent-systems/"
+    project_url: "https://embarq.dk/"
+
+research_areas:
+  - title: "Post-hoc Bayesian inference"
+    tag: "Bayesian deep learning"
+    description: >-
+      Bayesian uncertainty estimation for pre-trained neural networks through
+      linearized Laplace, neural kernels, and scalable approximations.
+    accent: "oxblood"
+  - title: "Function-space inference"
+    tag: "Variational inference"
+    description: >-
+      Gaussian and implicit-process models that place uncertainty directly over
+      functions, including variational and flow-transformed constructions.
+    accent: "olive"
+  - title: "Generalization theory"
+    tag: "Generalization bounds"
+    description: >-
+      PAC-Chernoff and large-deviation analyses of interpolation,
+      regularization, and the implicit bias of stochastic optimization.
+    accent: "oxblood"
+  - title: "Ensembles and calibration"
+    tag: "Deep ensembles"
+    description: >-
+      Theoretical and empirical study of diversity, model combination, and
+      calibrated prediction in neural network ensembles.
+    accent: "olive"
+
+research_note:
+  heading: "Research through-line"
+  body: >-
+    My work connects practical uncertainty estimators with theory that helps
+    explain why modern over-parameterized models can still generalize.
+  points:
+    - "Post-hoc Bayesian methods for pre-trained neural networks."
+    - "Function-space inference through Gaussian and implicit processes."
+    - "Distribution-dependent bounds for interpolation and regularization."
+
+skills:
+  languages:
+    - "Python"
+    - "C++"
+  ml_frameworks:
+    - "PyTorch"
+    - "JAX"
+    - "TensorFlow"
+    - "Keras"
+  research_methods:
+    - "Bayesian deep learning"
+    - "Variational inference"
+    - "Gaussian processes"
+    - "Laplace approximations"
+    - "Uncertainty quantification"
+    - "PAC-Bayes and generalization bounds"
+    - "Deep ensembles"
+  research_practice:
+    - "Research software"
+    - "Scientific writing"
+    - "Collaborative research"
+    - "Teaching"

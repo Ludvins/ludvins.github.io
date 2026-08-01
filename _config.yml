@@ -12,4 +12,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - requirements-resume.txt
+  - scripts
+  - tmp
   - vendor/bundle

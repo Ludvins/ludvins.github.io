@@ -24,6 +24,8 @@
   search: "scalable linearized laplace approximation surrogate neural kernel esann spotlight bayesipy"
   accent: "oxblood"
   links:
+    - label: "PDF"
+      url: "https://arxiv.org/abs/2601.21835"
     - label: "Code"
       url: "https://github.com/Ludvins/BayesiPy"
 
@@ -53,6 +55,9 @@
   labels: ["QLA", "Laplace", "Regression"]
   search: "improving linearized laplace approximation quadratic approximations esann qla"
   accent: "oxblood"
+  links:
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2602.03394"
 
 - id: "sgd-implicit-bias"
   title: "A Large Deviation Theory Analysis on the Implicit Bias of SGD"
@@ -85,6 +90,8 @@
   search: "large deviation theory analysis implicit bias sgd neurocomputing code"
   accent: "oxblood"
   links:
+    - label: "PDF"
+      url: "https://www.sciencedirect.com/science/article/abs/pii/S0925231226003577"
     - label: "Code"
       url: "https://github.com/Ludvins/sgd-implicit-bias-ldt"
 
