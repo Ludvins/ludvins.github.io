@@ -3,6 +3,7 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
 url: https://ludvins.github.io
 destination: ./_site
 permalink: pretty
+asset_version: 2
 
 plugins:
   - jekyll-sitemap

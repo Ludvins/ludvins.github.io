@@ -1,13 +1,60 @@
 :root {
+  color-scheme: light;
   --paper: #f4efe6;
   --surface: #fbfaf6;
+  --surface-soft: rgba(251, 250, 246, 0.52);
+  --surface-hover: #ffffff;
   --ink: #1e1d1a;
   --muted: #6c665e;
   --border: #d6ccbc;
   --rule: rgba(214, 204, 188, 0.52);
   --oxblood: #7a2e2a;
+  --accent-solid: #7a2e2a;
+  --accent-hover: #1e1d1a;
   --olive: #4f5a3a;
+  --on-accent: #ffffff;
+  --focus-ring: rgba(122, 46, 42, 0.14);
   --shadow: rgba(30, 29, 26, 0.05);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #171613;
+  --surface: #211f1b;
+  --surface-soft: rgba(33, 31, 27, 0.72);
+  --surface-hover: #2b2823;
+  --ink: #f3eee4;
+  --muted: #b9b0a3;
+  --border: #4b443a;
+  --rule: rgba(75, 68, 58, 0.7);
+  --oxblood: #e19a90;
+  --accent-solid: #913b36;
+  --accent-hover: #aa4c45;
+  --olive: #a7b788;
+  --on-accent: #ffffff;
+  --focus-ring: rgba(225, 154, 144, 0.24);
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --paper: #171613;
+    --surface: #211f1b;
+    --surface-soft: rgba(33, 31, 27, 0.72);
+    --surface-hover: #2b2823;
+    --ink: #f3eee4;
+    --muted: #b9b0a3;
+    --border: #4b443a;
+    --rule: rgba(75, 68, 58, 0.7);
+    --oxblood: #e19a90;
+    --accent-solid: #913b36;
+    --accent-hover: #aa4c45;
+    --olive: #a7b788;
+    --on-accent: #ffffff;
+    --focus-ring: rgba(225, 154, 144, 0.24);
+    --shadow: rgba(0, 0, 0, 0.3);
+  }
 }
 
 *,
@@ -152,6 +199,12 @@ summary {
   line-height: 1;
 }
 
+.site-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -182,6 +235,52 @@ summary {
   height: 2px;
   background: var(--oxblood);
   content: "";
+}
+
+.theme-toggle {
+  display: inline-flex;
+  min-width: 70px;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  padding: 0 10px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--oxblood);
+  color: var(--ink);
+  outline: none;
+}
+
+.theme-toggle:focus-visible {
+  box-shadow: 0 0 0 2px var(--focus-ring);
+}
+
+.theme-toggle__icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+}
+
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__icon--sun {
+  display: block;
 }
 
 .mobile-nav {
@@ -329,7 +428,7 @@ summary {
   min-height: 26px;
   align-items: center;
   border: 1px solid var(--border);
-  background: rgba(251, 250, 246, 0.52);
+  background: var(--surface-soft);
   color: var(--ink);
   font-size: 0.72rem;
   font-weight: 800;
@@ -395,22 +494,22 @@ summary {
 
 .button:hover,
 .button:focus {
-  background: #ffffff;
+  background: var(--surface-hover);
   color: var(--oxblood);
   text-decoration: none;
 }
 
 .button-primary {
   border-color: var(--oxblood);
-  background: var(--oxblood);
-  color: #ffffff;
+  background: var(--accent-solid);
+  color: var(--on-accent);
 }
 
 .button-primary:hover,
 .button-primary:focus {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: #ffffff;
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--on-accent);
 }
 
 .profile-card,
@@ -837,7 +936,7 @@ summary {
 
 #publication-search:focus {
   border-color: var(--oxblood);
-  box-shadow: 0 0 0 2px rgba(122, 46, 42, 0.14);
+  box-shadow: 0 0 0 2px var(--focus-ring);
 }
 
 .filter-chips {
@@ -856,8 +955,8 @@ summary {
 .chip:hover,
 .chip:focus {
   border-color: var(--oxblood);
-  background: var(--oxblood);
-  color: #ffffff;
+  background: var(--accent-solid);
+  color: var(--on-accent);
 }
 
 .archive-layout {
@@ -1239,6 +1338,10 @@ summary {
     display: none;
   }
 
+  .site-controls {
+    gap: 12px;
+  }
+
   .mobile-nav {
     display: block;
   }
@@ -1485,6 +1588,16 @@ summary {
   .brand-mark {
     width: 43px;
     height: 43px;
+  }
+
+  .theme-toggle {
+    min-width: 34px;
+    width: 34px;
+    padding: 0;
+  }
+
+  .theme-toggle__text {
+    display: none;
   }
 
   .hero-copy h1,
