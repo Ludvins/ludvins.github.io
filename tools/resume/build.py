@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build data/cv.pdf from the Jekyll data files shared with the website."""
+"""Build data/cv.pdf from data shared with the Jekyll website."""
 
 from __future__ import annotations
 
@@ -36,11 +36,11 @@ except ImportError as error:
     missing = getattr(error, "name", "a required package")
     raise SystemExit(
         f"Missing {missing}. Install the resume dependencies with:\n"
-        f"  {sys.executable} -m pip install -r requirements-resume.txt"
+        f"  {sys.executable} -m pip install -r tools/resume/requirements.txt"
     ) from error
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "_data"
 DEFAULT_OUTPUT = ROOT / "data" / "cv.pdf"
 BUILD_DIR = ROOT / "tmp" / "pdfs"

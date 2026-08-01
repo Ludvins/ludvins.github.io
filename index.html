@@ -58,7 +58,7 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
     <aside class="profile-card" aria-label="Current profile">
       <div class="profile-intro">
         <figure class="profile-photo">
-          <img src="/images/me.png" alt="{{ profile.name }}" />
+          <img src="/assets/images/me.png" alt="{{ profile.name }}" />
         </figure>
         <div>
           <p class="micro-label">Current position</p>
@@ -82,7 +82,7 @@ description: Probabilistic Machine Learning research by Luis A. Ortega.
         </div>
         <div>
           <dt>Updated</dt>
-          <dd>{% include last-updated.txt %}</dd>
+          <dd>{{ profile.last_updated }}</dd>
         </div>
       </dl>
     </aside>
