@@ -1,5 +1,42 @@
 # Publications are rendered by publications.html and selected homepage cards.
 
+- id: "flow-transformed-implicit-processes"
+  title: "Flow-Transformed Implicit Processes for Function-Space Variational Inference"
+  year: "2026"
+  authors: "Luis A. Ortega, Andrés R. Masegosa, Thomas D. Nielsen"
+  venue: "NeurIPS 2026"
+  summary: |
+    Uses normalizing flows over finite sampled-function combinations to enrich
+    function-space variational inference with implicit-process priors.
+  abstract: |
+    Implicit-process priors define distributions over functions through flexible generative
+    mechanisms, making them attractive for Bayesian function-space modelling. However,
+    performing posterior inference with such priors is challenging because their induced
+    function-space distributions are typically not available in closed form. One practical
+    strategy is to approximate the prior using a finite collection of sampled functions, and
+    then represent posterior functions as learned combinations of these samples. Existing
+    approaches commonly place a Gaussian variational distribution over the combination
+    weights. While tractable, this choice limits the shapes of posterior uncertainty that
+    can be represented, especially when the true posterior is asymmetric, heavy-tailed, or
+    multimodal. We propose Flow-Transformed Implicit Processes (FTIP), a variational
+    inference method that makes this finite-dimensional function-space approximation more
+    expressive. Instead of using a Gaussian distribution over the combination weights, FTIP
+    uses a normalizing flow to define a richer variational distribution. This induces a
+    flexible posterior distribution over functions while preserving tractable optimization.
+    We train the model using a Black-Box &alpha; objective, allowing us to compare
+    mass-covering and mode-seeking variational behaviour. Experiments show that FTIP
+    captures asymmetric and multimodal posterior structure in function space that Gaussian
+    coefficient approximations tend to smooth or collapse.
+  tags: ["bayesian-dl", "inference", "code", "implicit", "processes", "normalizing-flows"]
+  labels: ["FTIP", "Implicit Processes", "Variational inference", "Code"]
+  search: "flow transformed implicit processes function space variational inference ftip neurips arxiv normalizing flows implicitprocesszoo code"
+  accent: "oxblood"
+  links:
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2606.01954"
+    - label: "Code"
+      url: "https://github.com/Ludvins/ImplicitProcessZoo"
+
 - id: "scalable-linearized-laplace"
   title: "Scalable Linearized Laplace Approximation via Surrogate Neural Kernel"
   year: "2026"
@@ -321,6 +358,71 @@
     - label: "Code"
       url: "https://github.com/simonrsantana/sparse-implicit-processes"
 
+- id: "why-scaling-will-not-always-fix-your-rollout"
+  title: "Why Scaling Will Not (Always) Fix Your Rollout"
+  year: "ongoing"
+  summary: |
+    Decomposes autoregressive rollout error into accumulated prediction error and a
+    memory floor caused by discarded predictive information, explaining when scaling
+    alone cannot improve rollouts.
+  abstract: |
+    Autoregressive models are trained for one-step prediction, but when deployed
+    recursively errors have been shown to accumulate over the rollout horizon. For
+    stationary processes with a fixed recursively updated state, we show that rollout
+    error decomposes exactly into the accumulated excess one-step log-loss and a state
+    term determined by predictive information discarded during the rollout. The latter
+    is zero at the first step and grows with the horizon, defining a floor that cannot
+    be removed by increasing model capacity or training data at a fixed state.
+    Maximizing one-step likelihood reduces rollout error but is blind to this floor.
+    We derive analytic expressions where available and estimate the floor from data,
+    a teacher, or a solver across four processes, from a hidden Markov chain to a
+    chaotic PDE, where larger models stall on the floor unless the state grows with
+    them. These results separate rollout drift reducible by scaling from drift that
+    requires a more informative state.
+  tags: ["bounds", "autoregressive", "rollouts", "information-theory", "scaling"]
+  labels: ["Autoregressive models", "Rollout drift", "Predictive information"]
+  search: "why scaling will not always fix your rollout autoregressive models rollout drift compounding errors predictive information memory floor information theory"
+  accent: "oxblood"
+  ongoing: true
+  include_in_resume: false
+
+- id: "generalized-matheron-variational-implicit-processes"
+  title: "Generalized Matheron Variational Implicit Processes"
+  year: "ongoing"
+  authors: "Luis A. Ortega, Andrés R. Masegosa, Thomas D. Nielsen"
+  summary: |
+    Uses pathwise corrections at inducing inputs for variational inference with
+    implicit-process priors, retaining the prior's structure and variability.
+  abstract: |
+    Implicit-process priors specify distributions over functions through sample-forward
+    mechanisms such as Bayesian neural networks and stochastic simulators, but their
+    function-space densities are typically unavailable. We introduce Generalized
+    Matheron Variational Implicit Processes (GMVIP), a pathwise variational family for
+    posterior inference with such priors. For Gaussian-process priors, GMVIP recovers
+    the standard inducing-variable variational GP construction; for general implicit
+    priors, its empirical covariance construction preserves the prior mean and
+    covariance in the population limit. GMVIP constructs posterior samples by drawing
+    a function from the prior and applying a correction anchored at a set of inducing
+    inputs. The effect of this correction away from the inducing inputs is determined
+    directly from prior samples, allowing the posterior to retain the structure and
+    variability of the original implicit process. The (surrogate) prior and variational
+    posterior use the same pathwise construction and differ only in the distribution of
+    whitened inducing coefficients, yielding a tractable coefficient-space
+    Kullback-Leibler divergence. Experiments on regression, classification, and
+    forecasting with simulator-defined and retrieval-conditioned empirical trajectory
+    priors show that GMVIP is broadly competitive with existing methods.
+  tags: ["bayesian-dl", "inference", "code", "implicit", "processes", "variational", "matheron"]
+  labels: ["GMVIP", "Implicit Processes", "Variational inference", "Preprint", "Code"]
+  search: "generalized matheron variational implicit processes gmvip pathwise inducing inputs gaussian processes arxiv preprint implicitprocesszoo code"
+  accent: "oxblood"
+  ongoing: true
+  include_in_resume: false
+  links:
+    - label: "Preprint"
+      url: "https://arxiv.org/pdf/2610.07938"
+    - label: "Code"
+      url: "https://github.com/Ludvins/ImplicitProcessZoo"
+
 - id: "loss-tail-sgd"
   title: "Loss-Tail SGD: Generalization-Aware Optimization via Batch Rejection Sampling"
   year: "ongoing"
@@ -354,42 +456,6 @@
   search: "loss tail sgd generalization aware optimization batch rejection sampling large deviation calibration"
   accent: "oxblood"
   ongoing: true
-
-- id: "flow-transformed-implicit-processes"
-  title: "Flow-Transformed Implicit Processes for Function-Space Variational Inference"
-  year: "ongoing"
-  authors: "Luis A. Ortega, Andrés R. Masegosa, Thomas D. Nielsen"
-  venue: "arXiv 2026"
-  summary: |
-    Uses normalizing flows over finite sampled-function combinations to enrich
-    function-space variational inference with implicit-process priors.
-  abstract: |
-    Implicit-process priors define distributions over functions through flexible generative
-    mechanisms, making them attractive for Bayesian function-space modelling. However,
-    performing posterior inference with such priors is challenging because their induced
-    function-space distributions are typically not available in closed form. One practical
-    strategy is to approximate the prior using a finite collection of sampled functions, and
-    then represent posterior functions as learned combinations of these samples. Existing
-    approaches commonly place a Gaussian variational distribution over the combination
-    weights. While tractable, this choice limits the shapes of posterior uncertainty that
-    can be represented, especially when the true posterior is asymmetric, heavy-tailed, or
-    multimodal. We propose Flow-Transformed Implicit Processes (FTIP), a variational
-    inference method that makes this finite-dimensional function-space approximation more
-    expressive. Instead of using a Gaussian distribution over the combination weights, FTIP
-    uses a normalizing flow to define a richer variational distribution. This induces a
-    flexible posterior distribution over functions while preserving tractable optimization.
-    We train the model using a Black-Box &alpha; objective, allowing us to compare
-    mass-covering and mode-seeking variational behaviour. Experiments show that FTIP
-    captures asymmetric and multimodal posterior structure in function space that Gaussian
-    coefficient approximations tend to smooth or collapse.
-  tags: ["bayesian-dl", "inference", "implicit", "processes", "normalizing-flows"]
-  labels: ["FTIP", "Implicit Processes", "Variational inference", "Preprint"]
-  search: "flow transformed implicit processes function space variational inference ftip arxiv normalizing flows"
-  accent: "oxblood"
-  ongoing: true
-  links:
-    - label: "Preprint"
-      url: "https://arxiv.org/abs/2606.01954"
 
 - id: "contrastive-linearized-laplace"
   title: "Contrastive Linearized Laplace: Loss Geometry, Valid Repairs, and Reliable Cores"
