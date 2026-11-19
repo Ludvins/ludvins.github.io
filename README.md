@@ -29,9 +29,12 @@ resume:
 - `profile.yml` contains contact details, the current position, research areas,
   skills, and the homepage update date.
 - `publications.yml` contains publication metadata, abstracts, tags, and links.
-- `experience.yml` contains research, teaching, and visiting positions.
+- `experience.yml` contains professional and academic positions.
+- `engineering.yml` contains professional engineering projects shown on the
+  Code page and in the resume.
 - `education.yml` contains degrees, training, and academic honors.
-- `code.yml` contains research-code and open-source entries.
+- `code.yml` contains open-source entries shown on the Code page and in the
+  resume.
 
 ## Run the website locally
 
@@ -50,6 +53,12 @@ the public URLs at `/publications/`, `/experience/`, and so on.
 Edit the relevant YAML file under `_data/`; do not edit the generated PDF
 manually. To omit a publication from the resume while retaining it on the site,
 set `include_in_resume: false` on that publication.
+To hide only a degree's detail in the PDF, set `include_detail_in_resume: false`
+on that degree; its website entry remains unchanged.
+
+The PDF places education after experience, then lists selected publications,
+professional engineering projects, and open-source contributions. The complete
+publication archive, including ongoing research, remains on the website.
 
 Install the resume dependencies once:
 

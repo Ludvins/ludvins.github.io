@@ -816,6 +816,53 @@ summary {
   font-size: 1.28rem;
 }
 
+.repo-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.repo-heading h2 {
+  margin: 0;
+}
+
+.code-page .repo-heading h3 {
+  margin: 0;
+  font-size: 1.28rem;
+}
+
+.code-group + .code-group {
+  margin-top: 56px;
+}
+
+.code-page .code-group > h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.code-group .code-list {
+  margin-top: 20px;
+}
+
+.selected-card .repo-role {
+  display: inline-flex;
+  min-height: 22px;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  color: var(--ink);
+  padding: 0 8px;
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.selected-card .repo-heading .repo-stars {
+  color: var(--muted);
+  font-weight: 800;
+}
+
 .selected-card span,
 .publication-card p,
 .content-page p,
@@ -895,6 +942,21 @@ summary {
 .inline-actions {
   justify-content: flex-end;
   white-space: nowrap;
+}
+
+.repo-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.repo-stars svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
 }
 
 .page-hero {

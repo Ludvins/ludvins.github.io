@@ -40,6 +40,7 @@
 - id: "scalable-linearized-laplace"
   title: "Scalable Linearized Laplace Approximation via Surrogate Neural Kernel"
   year: "2026"
+  include_in_resume: false
   authors: "Luis A. Ortega, Simon Rodriguez-Santana, Daniel Hernandez-Lobato"
   venue: "ESANN 2026 &middot; Spotlight talk"
   summary: |
@@ -69,6 +70,7 @@
 - id: "quadratic-linearized-laplace"
   title: "Improving the Linearized Laplace Approximation via Quadratic Approximations"
   year: "2026"
+  include_in_resume: false
   authors: "Pedro Jimenez, Luis A. Ortega, Pablo Morales-Alvarez, Daniel Hernandez-Lobato"
   venue: "ESANN 2026"
   summary: |
@@ -99,6 +101,7 @@
 - id: "sgd-implicit-bias"
   title: "A Large Deviation Theory Analysis on the Implicit Bias of SGD"
   year: "2026"
+  include_in_resume: false
   authors: "Luis A. Ortega, Andres R. Masegosa"
   venue: "Neurocomputing 2026"
   summary: |
@@ -231,6 +234,7 @@
 - id: "cold-posterior-effect"
   title: "The Cold Posterior Effect Indicates Underfitting"
   year: "2024"
+  include_in_resume: false
   authors: "Yijie Zhang, Yi-Shan Wu, Luis A. Ortega, Andres R. Masegosa"
   venue: "TMLR 2024"
   summary: |
@@ -330,6 +334,7 @@
 - id: "sparse-implicit-processes"
   title: "Correcting Model Bias with Sparse Implicit Processes"
   year: "2022"
+  include_in_resume: false
   authors: "Simon Rodriguez-Santana, Luis A. Ortega, Daniel Hernandez-Lobato, Bryan Zaldivar"
   venue: "ICML Workshop 2022"
   summary: |

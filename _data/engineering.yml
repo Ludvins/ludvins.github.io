@@ -1,0 +1,12 @@
+- title: "Research Tab"
+  description: >-
+    Connected research workspace for planning projects, tracking experiments
+    and evidence, and collaboratively writing reproducible papers.
+  url: "https://researchtab.com/"
+
+- title: "FrameGrove"
+  description: >-
+    Self-hosted photo search platform using SigLIP2 and CLIP vector embeddings,
+    PostgreSQL/pgvector retrieval, and a local Qwen vision-language model to
+    interpret natural-language queries.
+  url: "https://github.com/Ludvins/FrameGrove"

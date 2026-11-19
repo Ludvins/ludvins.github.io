@@ -21,10 +21,11 @@ try:
     from reportlab.lib.pagesizes import A4
     from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
     from reportlab.lib.units import mm
+    from reportlab.graphics.shapes import Drawing, Polygon, String
     from reportlab.pdfbase import pdfmetrics
     from reportlab.pdfbase.ttfonts import TTFont
     from reportlab.platypus import (
-        CondPageBreak,
+        Flowable,
         KeepTogether,
         Paragraph,
         SimpleDocTemplate,
@@ -50,6 +51,7 @@ SOURCE_PATHS = [
     DATA_DIR / "publications.yml",
     DATA_DIR / "education.yml",
     DATA_DIR / "code.yml",
+    DATA_DIR / "engineering.yml",
     Path(__file__).resolve(),
 ]
 
@@ -159,16 +161,7 @@ def make_styles(fonts: dict[str, str]) -> dict[str, ParagraphStyle]:
             leading=27,
             textColor=INK,
             alignment=TA_LEFT,
-            spaceAfter=2,
-        ),
-        "role": ParagraphStyle(
-            "ResumeRole",
-            parent=styles["Normal"],
-            fontName=fonts["sans"],
-            fontSize=9.5,
-            leading=12,
-            textColor=MUTED,
-            spaceAfter=4,
+            spaceAfter=5,
         ),
         "contact": ParagraphStyle(
             "ResumeContact",
@@ -228,6 +221,69 @@ def link_markup(label: str, url: str) -> str:
     return f'<link href="{safe_url}" color="#7A2E2A"><b>{markup(label)}</b></link>'
 
 
+def star_count_flowable(stars: int, styles: dict[str, ParagraphStyle]) -> Drawing:
+    label = f"{stars:,}"
+    font_name = styles["meta"].fontName
+    font_size = styles["meta"].fontSize
+    label_width = pdfmetrics.stringWidth(label, font_name, font_size)
+    drawing = Drawing(10 + label_width, 9)
+    drawing.hAlign = "RIGHT"
+    drawing.add(
+        Polygon(
+            [4, 8.5, 5, 5.6, 8, 5.5, 5.6, 3.7, 6.4, 0.8, 4, 2.5, 1.6, 0.8, 2.4, 3.7, 0, 5.5, 3, 5.6],
+            fillColor=ACCENT,
+            strokeColor=None,
+        )
+    )
+    drawing.add(
+        String(
+            10,
+            0.8,
+            label,
+            fontName=font_name,
+            fontSize=font_size,
+            fillColor=ACCENT,
+        )
+    )
+    return drawing
+
+
+def repository_heading_flowable(
+    title: str,
+    title_markup: str,
+    role: str,
+    stars: int | None,
+    styles: dict[str, ParagraphStyle],
+) -> Table:
+    font_name = styles["entry"].fontName
+    font_size = styles["entry"].fontSize
+    cells: list[Flowable] = [Paragraph(title_markup, styles["entry"])]
+    widths = [pdfmetrics.stringWidth(title, font_name, font_size) + 10]
+
+    if role:
+        cells.append(Paragraph(f"<i>{markup(role)}</i>", styles["entry"]))
+        widths.append(pdfmetrics.stringWidth(role, font_name, font_size) + 10)
+
+    if stars is not None:
+        star_label = star_count_flowable(stars, styles)
+        cells.append(star_label)
+        widths.append(star_label.width + 2)
+
+    table = Table([cells], colWidths=widths, hAlign="LEFT")
+    table.setStyle(
+        TableStyle(
+            [
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                ("TOPPADDING", (0, 0), (-1, -1), 0),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+            ]
+        )
+    )
+    return table
+
+
 def section_heading(title: str, styles: dict[str, ParagraphStyle], width: float) -> Table:
     table = Table([[Paragraph(markup(title), styles["section"])]], colWidths=[width])
     table.setStyle(
@@ -245,17 +301,25 @@ def section_heading(title: str, styles: dict[str, ParagraphStyle], width: float)
 
 
 def entry_table(
-    left: str,
-    right: str,
+    left: str | Flowable,
+    right: str | Flowable,
     detail: str,
     styles: dict[str, ParagraphStyle],
     width: float,
     *,
     left_markup: bool = True,
 ) -> Table:
-    left_text = left if left_markup else markup(left)
+    left_text = left if left_markup or isinstance(left, Flowable) else markup(left)
+    left_flowable = (
+        left_text
+        if isinstance(left_text, Flowable)
+        else Paragraph(left_text, styles["entry"])
+    )
+    right_flowable = (
+        right if isinstance(right, Flowable) else Paragraph(markup(right), styles["meta"])
+    )
     rows: list[list[Any]] = [
-        [Paragraph(left_text, styles["entry"]), Paragraph(markup(right), styles["meta"])],
+        [left_flowable, right_flowable],
     ]
     if detail:
         rows.append([Paragraph(detail, styles["entry_small"]), ""])
@@ -324,6 +388,14 @@ def grouped_section(
     return flowables
 
 
+def empty_section(
+    title: str,
+    styles: dict[str, ParagraphStyle],
+    width: float,
+) -> list[Any]:
+    return [Spacer(1, 7), section_heading(title, styles, width)]
+
+
 def publication_actions(publication: dict[str, Any]) -> str:
     actions = []
     for link in publication.get("links") or []:
@@ -337,6 +409,7 @@ def build_story(
     profile: dict[str, Any],
     experience: list[dict[str, Any]],
     publications: list[dict[str, Any]],
+    engineering: list[dict[str, Any]],
     education: dict[str, Any],
     code: list[dict[str, Any]],
     styles: dict[str, ParagraphStyle],
@@ -345,8 +418,6 @@ def build_story(
     story: list[Any] = []
 
     story.append(Paragraph(markup(profile["name"]), styles["name"]))
-    role_line = f'<b>{markup(profile["role"])}</b> &nbsp; | &nbsp; {markup(profile["institution"])} &nbsp; | &nbsp; {markup(profile["location"])}'
-    story.append(Paragraph(role_line, styles["role"]))
 
     contacts = [
         link_markup(profile["email"], f'mailto:{profile["email"]}'),
@@ -358,7 +429,7 @@ def build_story(
         if link.get("resume", False)
     )
     story.append(Paragraph(" &nbsp; | &nbsp; ".join(contacts), styles["contact"]))
-    story.append(Spacer(1, 5))
+    story.append(Spacer(1, 2))
 
     experience_entries = []
     for position in experience:
@@ -373,6 +444,21 @@ def build_story(
             )
         )
     story.extend(grouped_section("Experience", experience_entries, styles, width))
+
+    education_entries = []
+    for degree in education.get("degrees", []):
+        left = f'<b>{markup(degree["title"])}</b>, <i>{markup(degree["institution"])}</i>'
+        detail = degree.get("detail") if degree.get("include_detail_in_resume", True) else ""
+        education_entries.append(
+            entry_table(
+                left,
+                plain(degree.get("date")),
+                markup(detail),
+                styles,
+                width,
+            )
+        )
+    story.extend(grouped_section("Education", education_entries, styles, width))
 
     published = [
         publication
@@ -394,51 +480,61 @@ def build_story(
                 width,
             )
         )
-    story.extend(grouped_section("Publications", publication_entries, styles, width))
+    story.extend(grouped_section("Selected Publications", publication_entries, styles, width))
 
-    ongoing = [
-        publication
-        for publication in publications
-        if publication.get("ongoing") and publication.get("include_in_resume", True)
-    ]
-    ongoing_entries = []
-    for publication in ongoing:
-        left = f'<b>{markup(publication["title"])}</b>'
+    engineering_entries = []
+    for project in engineering or []:
+        title = markup(project.get("title"))
+        url = plain(project.get("url"))
+        left = link_markup(title, url) if url else f"<b>{title}</b>"
         details = []
-        if publication.get("summary"):
-            details.append(markup(publication["summary"]))
-        actions = publication_actions(publication)
-        if actions:
-            details.append(f"<br/>{actions}" if details else actions)
-        ongoing_entries.append(
+        if project.get("description"):
+            details.append(markup(project["description"]))
+        if project.get("technologies"):
+            details.append(
+                f'<b>Technologies:</b> {markup(", ".join(project["technologies"]))}'
+            )
+        engineering_entries.append(
             entry_table(
                 left,
-                "Ongoing",
-                "".join(details),
+                plain(project.get("status") or project.get("date")),
+                "<br/>".join(details),
                 styles,
                 width,
             )
         )
-    story.extend(grouped_section("Ongoing Research", ongoing_entries, styles, width))
+    if engineering_entries:
+        story.extend(grouped_section("Engineering", engineering_entries, styles, width))
+    else:
+        story.extend(empty_section("Engineering", styles, width))
 
-    education_entries = []
-    for degree in education.get("degrees", []):
-        left = f'<b>{markup(degree["title"])}</b>, <i>{markup(degree["institution"])}</i>'
-        education_entries.append(
+    code_entries = []
+    for repo in code:
+        title = plain(repo["title"])
+        url = plain(repo.get("url"))
+        title_markup = link_markup(title, url) if url else f"<b>{markup(title)}</b>"
+        role = plain(repo.get("role"))
+        stars = repo.get("stars")
+        star_count = int(str(stars).replace(",", "")) if stars is not None else None
+        heading = repository_heading_flowable(
+            title, title_markup, role, star_count, styles
+        )
+        code_entries.append(
             entry_table(
-                left,
-                plain(degree.get("date")),
-                markup(degree.get("detail")),
+                heading,
+                "",
+                markup(repo.get("description")),
                 styles,
                 width,
             )
         )
-    story.append(CondPageBreak(80 * mm))
-    story.extend(grouped_section("Education", education_entries, styles, width))
+    story.extend(grouped_section("Open Source Contributions", code_entries, styles, width))
 
     honor_entries = []
     for honor in education.get("honors", []):
-        left = f'<b>{markup(honor["title"])}</b>'
+        title = plain(honor["title"])
+        url = plain(honor.get("url"))
+        left = link_markup(title, url) if url else f"<b>{markup(title)}</b>"
         honor_entries.append(
             entry_table(
                 left,
@@ -448,21 +544,9 @@ def build_story(
                 width,
             )
         )
-    story.extend(grouped_section("Honors & Awards", honor_entries, styles, width))
-
-    code_entries = []
-    for repo in code:
-        left = link_markup(repo["title"], repo["url"])
-        code_entries.append(
-            entry_table(
-                left,
-                "",
-                markup(repo.get("description")),
-                styles,
-                width,
-            )
-        )
-    story.extend(grouped_section("Open Source Contributions", code_entries, styles, width))
+    story.extend(
+        grouped_section("Scholarships & Credentials", honor_entries, styles, width)
+    )
 
     skills = profile.get("skills", {})
     skill_entries = [skills_table(skills, styles, width)]
@@ -522,7 +606,9 @@ def expected_text(
     profile: dict[str, Any],
     experience: list[dict[str, Any]],
     publications: list[dict[str, Any]],
+    engineering: list[dict[str, Any]],
     education: dict[str, Any],
+    code: list[dict[str, Any]],
 ) -> list[str]:
     return [
         profile["name"],
@@ -531,9 +617,13 @@ def expected_text(
         *[
             publication["title"]
             for publication in publications
-            if publication.get("include_in_resume", True)
+            if not publication.get("ongoing")
+            and publication.get("include_in_resume", True)
         ],
+        *[project["title"] for project in engineering],
+        *[repo["title"] for repo in code],
         *[degree["title"] for degree in education.get("degrees", [])],
+        *[honor["title"] for honor in education.get("honors", [])],
     ]
 
 
@@ -541,6 +631,7 @@ def build_resume(output: Path) -> tuple[int, int]:
     profile = read_yaml("profile.yml")
     experience = read_yaml("experience.yml")
     publications = read_yaml("publications.yml")
+    engineering = read_yaml("engineering.yml") or []
     education = read_yaml("education.yml")
     code = read_yaml("code.yml")
     content_hash = source_hash()
@@ -567,6 +658,7 @@ def build_resume(output: Path) -> tuple[int, int]:
         profile,
         experience,
         publications,
+        engineering,
         education,
         code,
         styles,
@@ -578,7 +670,9 @@ def build_resume(output: Path) -> tuple[int, int]:
         onLaterPages=lambda canvas, doc: set_pdf_metadata(canvas, profile, content_hash),
     )
 
-    expected = expected_text(profile, experience, publications, education)
+    expected = expected_text(
+        profile, experience, publications, engineering, education, code
+    )
     page_count, link_count = validate_pdf(temporary_output, expected, content_hash)
 
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -592,10 +686,14 @@ def check_resume(output: Path) -> tuple[int, int]:
     profile = read_yaml("profile.yml")
     experience = read_yaml("experience.yml")
     publications = read_yaml("publications.yml")
+    engineering = read_yaml("engineering.yml") or []
     education = read_yaml("education.yml")
+    code = read_yaml("code.yml")
     return validate_pdf(
         output,
-        expected_text(profile, experience, publications, education),
+        expected_text(
+            profile, experience, publications, engineering, education, code
+        ),
         source_hash(),
     )
 

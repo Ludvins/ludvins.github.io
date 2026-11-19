@@ -1,4 +1,10 @@
 degrees:
+  - date: "2024-Present"
+    label: "Bachelor studies"
+    title: "B.S. in Physics"
+    institution: "National Distance Education University"
+    accent: "olive"
+
   - date: "11/2021-11/2025"
     label: "Doctoral training"
     title: "Ph.D. Student"
@@ -9,17 +15,12 @@ degrees:
         url: "https://ludvins.github.io/thesis/"
     accent: "oxblood"
 
-  - date: "2024-Present"
-    label: "Bachelor studies"
-    title: "B.S. in Physics"
-    institution: "National Distance Education University"
-    accent: "olive"
-
   - date: "2020-2022"
     label: "Master studies"
     title: "M.S. in Data Science"
     institution: "Autonomous University of Madrid"
     detail: "Master thesis: <em>Deep Variational Implicit Processes</em>"
+    include_detail_in_resume: false
     accent: "oxblood"
 
   - date: "2015-2020"
@@ -35,6 +36,13 @@ degrees:
     accent: "olive"
 
 honors:
+  - date: "2025"
+    title: "Building RAG Agents with LLMs"
+    description: "NVIDIA Deep Learning Institute credential in building retrieval-augmented generation agents."
+    url: "https://learn.nvidia.com/certificates?id=zGY7MWj3SBqt_iiBRKlLZw"
+    link_label: "View credential"
+    accent: "oxblood"
+
   - date: "2023"
     title: "Santander-UAM Scholarship"
     description: "Research stay on uncertainty estimation in large language models at the University of Cambridge."
@@ -48,9 +56,4 @@ honors:
   - date: "2020"
     title: "Research Collaboration Scholarship"
     description: "Department of Computer Science, Autonomous University of Madrid."
-    accent: "olive"
-
-  - date: "2020"
-    title: "Highest mark on bachelor's thesis"
-    description: "10/10 for the thesis <em>Statistical Models with Variational Methods</em> at the University of Granada."
     accent: "olive"

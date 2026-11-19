@@ -11,7 +11,7 @@ description: Education and academic training for Luis A. Ortega.
     <p class="section-kicker">Education</p>
     <h1>Academic training in machine learning, data science, mathematics, and computer science.</h1>
     <p>
-      Education history from the current CV, organized by degree and supported
+      Education history from the current CV, ordered by start date and supported
       with thesis topics where available.
     </p>
   </section>
@@ -40,7 +40,7 @@ description: Education and academic training for Luis A. Ortega.
   </section>
 
   <section class="section-block education-honors">
-    <p class="section-kicker">Academic Honors</p>
+    <p class="section-kicker">Scholarships &amp; Credentials</p>
     <div class="selected-list">
       {% for honor in site.data.education.honors %}
         <article class="selected-card accent-{{ honor.accent | default: 'olive' }}">
@@ -49,6 +49,11 @@ description: Education and academic training for Luis A. Ortega.
             <h2>{{ honor.title }}</h2>
             <span>{{ honor.description }}</span>
           </div>
+          {% if honor.url %}
+            <div class="inline-actions">
+              <a href="{{ honor.url }}">{{ honor.link_label | default: 'View credential' }}</a>
+            </div>
+          {% endif %}
         </article>
       {% endfor %}
     </div>
