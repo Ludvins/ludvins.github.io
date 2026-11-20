@@ -1236,6 +1236,12 @@ summary {
   margin-bottom: 24px;
 }
 
+.contact-card h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  overflow-wrap: anywhere;
+}
+
 .link-stack {
   display: grid;
   gap: 12px;
