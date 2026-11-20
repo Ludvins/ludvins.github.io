@@ -1241,6 +1241,105 @@ summary {
   gap: 12px;
 }
 
+.contact-consulting {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.contact-consulting .micro-label {
+  margin-bottom: 24px;
+}
+
+.contact-consulting h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.contact-consulting__copy > p:last-child {
+  max-width: 470px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.toptal-badge {
+  --toptal-hexagon: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  display: inline-block;
+  justify-self: end;
+  padding: 6px;
+  background: #25a9ef;
+  clip-path: var(--toptal-hexagon);
+  font-family: Arial, sans-serif;
+}
+
+.toptal-badge__inner {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 0 40px;
+  background: radial-gradient(circle at 20% -10%, #00c3ff -80%, #fff 30%),
+    radial-gradient(circle at -20% 20%, #00c3ff -80%, #fff 30%),
+    radial-gradient(circle at 70% 100%, #00c3ff -80%, #fff 30%),
+    radial-gradient(circle at 120% 80%, #00c3ff -80%, #fff 30%);
+  background-blend-mode: multiply;
+  clip-path: var(--toptal-hexagon);
+  color: #204ecf;
+  text-align: center;
+}
+
+.toptal-badge__stars {
+  width: 64px;
+  height: auto;
+}
+
+.toptal-badge__title {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.toptal-badge__divider {
+  width: 120px;
+  height: 1px;
+  background: #25a9ef;
+}
+
+.toptal-badge__vetted {
+  margin-bottom: -6px;
+  font-size: 16px;
+}
+
+.toptal-badge__logo {
+  width: 100px;
+  height: auto;
+}
+
+.toptal-badge__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #296bff;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2px;
+}
+
+.toptal-badge__link:hover,
+.toptal-badge__link:focus-visible {
+  background: #204ecf;
+  color: #fff;
+}
+
 .education-timeline {
   position: relative;
   display: grid;
@@ -1498,6 +1597,14 @@ summary {
   .contact-grid,
   .publication-tools {
     grid-template-columns: 1fr;
+  }
+
+  .contact-consulting {
+    grid-template-columns: 1fr;
+  }
+
+  .toptal-badge {
+    justify-self: start;
   }
 
   .metric-row {
